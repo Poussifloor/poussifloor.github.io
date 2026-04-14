@@ -1,14 +1,29 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
 
-<section class="hero">
-  <h2>Hello, I'm {{ site.title }}</h2>
-  <p>{{ site.description }}</p>
-</section>
+  <header class="site-header">
+    <h1><a href="/">{{ site.title }}</a></h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about.html">About</a>
+      <a href="/projects.html">Projects</a>
+    </nav>
+  </header>
 
-<section>
-  <h3>What I do</h3>
-  <p>I build simple, fast, and clean web experiences.</p>
-</section>
+  <main class="content">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <p>© {{ site.title }} — {{ site.time | date: "%Y" }}</p>
+  </footer>
+
+</body>
+</html>
