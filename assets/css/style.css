@@ -1,0 +1,36 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  color: #222;
+  line-height: 1.6;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  border-bottom: 1px solid #eee;
+}
+
+.site-header a {
+  text-decoration: none;
+  color: inherit;
+  margin-left: 15px;
+}
+
+.content {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.hero {
+  padding: 40px 0;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 40px;
+  font-size: 14px;
+  color: #777;
+}
