@@ -1,12 +1,6 @@
 ---
-layout: default
+layout: page
 title: Projects
 ---
 
-## Projects
-
-### Project One
-A short description of your project.
-
-### Project Two
-Another project description.
+xxxxxxx

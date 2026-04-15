@@ -1,4 +1,6 @@
-title: Your Name
+title: My Site
 description: Minimal portfolio built with Jekyll
 baseurl: ""
-url: ""
+url: "https://example.com"
+permalink: /blog/:year/:slug/
+exclude: [README.md, Gemfile, Gemfile.lock]
