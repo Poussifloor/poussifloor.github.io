@@ -1,6 +1,6 @@
-title: My Site
-description: Minimal portfolio built with Jekyll
+title: poussifloor
+description: Just a little website for experimenting
 baseurl: ""
-url: "https://example.com"
+url: "https://poussifloor.github.io/"
 permalink: /blog/:year/:slug/
 exclude: [README.md, Gemfile, Gemfile.lock]

@@ -2,6 +2,16 @@
 layout: default
 ---
 <article class="page">
+<div style="display: flex; align-items: center; justify-content: space-between;width: 80vw; position: relative; left: 50%; transform: translateX(-50%);">
   <h1>{{ page.title }}</h1>
+  <div style="display: flex; gap: 0.5rem;">
+    <input type="text" id="answer" name="answer" placeholder="..." autocomplete="off">
+  <button type="button" id="answerBtn">Répondre</button>
+  </div>
+</div>
+
+
+
+
   {{ content }}
 </article>
