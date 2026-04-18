@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Projects
+title: /cv/projects
 ---
 
 ## Some projects I did :

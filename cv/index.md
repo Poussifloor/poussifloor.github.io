@@ -1,13 +1,13 @@
 ---
-layout: page
-title: CV
+layout: cv
+title: /cv
 permalink: /cv/
 ---
 
 <style>
   .cv-section {
     font-family: 'Georgia', serif;
-    max-width: 860px;
+    max-width: 80vw;
     margin: 0 auto;
     padding: 2rem 1.5rem;
     color: #1a1a1a;
@@ -175,40 +175,6 @@ permalink: /cv/
 </section>
 
 
-
-
-<!-- Professional Experience -->
-<section class="cv-section">
-  <h2>Professional Experience</h2>
-  <table class="cv-table">
-    <tbody>
-      <tr>
-        <td class="cv-period">Apr 2026 – Sep 2026</td>
-        <td class="cv-content">
-          <strong>Tokyo University</strong> — Tokyo, Japan
-          <span class="role">Research student – 6 months Internship</span>
-          <ul>
-            <li>Short text explaining.</li>
-            <li><em>Key projects</em>:</li>
-            <li><em>Skills developed</em>:</li>
-          </ul>
-        </td>
-      </tr>
-      <tr>
-        <td class="cv-period">Jul 2024 – Jul 2025</td>
-        <td class="cv-content">
-          <strong>Hatfield Group</strong> — New York, NY
-          <span class="role">Structural Engineer – 1 year Internship</span>
-          <ul>
-            <li>Contributed to the modeling and design of reinforced concrete and steel components; hybrid concrete–wood and concrete–steel systems.</li>
-            <li><em>Key projects</em>: Steel indoor stadium with important 30ft-long cantilever constraints; wood-frame museum supporting a heavily loaded green roof with trees.</li>
-            <li><em>Skills developed</em>: AISC, ACI, ASCE standards; SAP2000, ETABS, RAM Structural System.</li>
-          </ul>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</section>
 
 <!-- Research Projects -->
 <section class="cv-section">
