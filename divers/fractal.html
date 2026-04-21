@@ -1,0 +1,128 @@
+---
+layout: page
+title: /divers/fractal
+---
+
+<div id="pyodide-status" class="dim">Loading Python environment...</div>
+
+<div id="lsystem-ui" style="display:none;">
+  <div class="dim" style="margin-bottom:0.8rem; line-height:1.8;">
+    run &lt;exemple&gt; n=&lt;int&gt;&nbsp;&nbsp;—&nbsp;&nbsp;run an L-system<br>
+    exemples: exemple1, exemple2, exemple3
+  </div>
+
+  <div id="ls-plot" style="margin-top:1.2rem; text-align:center;"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/pyodide/v0.25.1/full/pyodide.js"></script>
+<script>
+(async function () {
+  const status  = document.getElementById('pyodide-status');
+  const ui      = document.getElementById('lsystem-ui');
+  const plotDiv = document.getElementById('ls-plot');
+
+  const EXEMPLES = {
+    exemple1: { a: 60,  d0: 0,  m: 'F++F++F', r: 'F[++F]F'       },
+    exemple2: { a: 30,  d0: 90, m: 'F',       r: 'F[+F]F[-F]F'   },
+    exemple3: { a: 90,  d0: 0,  m: 'F',       r: 'F+F-F-F+F'     },
+  };
+
+  const INIT_PY = `
+import warnings
+warnings.filterwarnings('ignore')
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+import numpy as np
+from math import cos, sin, pi
+import io, base64
+
+def dessin(l, a, m, d0):
+    d = d0 * pi / 180
+    a = a  * pi / 180
+    X, Y = [0], [0]
+    T = []
+    for i in m:
+        if i == 'F':
+            X.append(X[-1] + l * cos(d))
+            Y.append(Y[-1] + l * sin(d))
+        elif i == '+': d += a
+        elif i == '-': d -= a
+        elif i == '[': T.append([X[-1], Y[-1], d])
+        elif i == ']':
+            X.append(T[-1][0]); Y.append(T[-1][1])
+            d = T[-1][2]; T.pop()
+    return X, Y
+
+def etape(m, r, n):
+    for _ in range(n):
+        m = ''.join(r if i == 'F' else i for i in m)
+    return m
+
+def render(a, d0, m, r, n, color):
+    m = etape(m, r, n)
+    x, y = dessin(1, a, m, d0)
+    fig, ax = plt.subplots(figsize=(6, 6))
+    fig.patch.set_alpha(0)
+    ax.set_facecolor('none')
+    ax.plot(x, y, '-', color=color, linewidth=0.8)
+    ax.axis('off')
+    ax.set_aspect('equal')
+    buf = io.BytesIO()
+    plt.savefig(buf, format='png', bbox_inches='tight', transparent=True, dpi=130)
+    buf.seek(0)
+    plt.close()
+    return base64.b64encode(buf.read()).decode()
+`;
+
+  let pyodide = null;
+
+  function parseN(args) {
+    for (const tok of args) {
+      const m = tok.match(/^(?:n=)?(\d+)$/);
+      if (m) return parseInt(m[1]);
+    }
+    return null;
+  }
+
+  async function runLsystem(name, n, io) {
+    const cfg = EXEMPLES[name];
+    if (!cfg)                   return io.printError('unknown exemple: ' + name);
+    if (n === null || isNaN(n)) return io.printError('missing n. usage: run ' + name + ' n=3');
+    if (n < 0)                  return io.printError('n must be >= 0');
+    if (n > 6) { io.printError('n capped at 6 (higher values may freeze the browser).'); n = 6; }
+
+    io.print('> running ' + name + ' n=' + n + ' ...');
+    plotDiv.innerHTML = '';
+
+    try {
+      const color = localStorage.getItem('term-color') || '#ffe066';
+      const b64 = await pyodide.runPythonAsync(
+        `render(${cfg.a}, ${cfg.d0}, ${JSON.stringify(cfg.m)}, ${JSON.stringify(cfg.r)}, ${n}, ${JSON.stringify(color)})`
+      );
+      const img = document.createElement('img');
+      img.src = 'data:image/png;base64,' + b64;
+      img.style.cssText = 'max-width:100%; border-radius:4px;';
+      plotDiv.appendChild(img);
+      io.print('');
+    } catch (err) {
+      const lines = err.message.split('\n').filter(l => l.trim());
+      io.printError('ERROR: ' + lines[lines.length - 1]);
+    }
+  }
+
+  const runCmd = (args, io) => {
+    if (!pyodide) return io.printError('python not ready yet — please wait');
+    runLsystem(args[0], parseN(args.slice(1)), io);
+  };
+  runCmd.help = 'run <exemple> n=<int>   render an L-system fractal';
+  window.PAGE_COMMANDS = { run: runCmd };
+
+  pyodide = await loadPyodide();
+  status.textContent = 'Installing packages...';
+  await pyodide.loadPackage(['numpy', 'matplotlib']);
+  await pyodide.runPythonAsync(INIT_PY);
+  status.style.display = 'none';
+  ui.style.display = 'block';
+})();
+</script>

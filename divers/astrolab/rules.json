@@ -1,0 +1,135 @@
+{
+  "planet_natures": {
+    "sun": "the luminary of the day, significator of life-force, authority, and the father",
+    "moon": "the luminary of the night, significator of the body, the soul's motion, and the mother",
+    "mercury": "the swift scribe of the gods, significator of speech, reasoning, commerce, and learning",
+    "venus": "the lesser benefic, significator of desire, beauty, friendship, and ornament",
+    "mars": "the lesser malefic, significator of strife, courage, iron, and sudden action",
+    "jupiter": "the greater benefic, significator of increase, patronage, piety, and good counsel",
+    "saturn": "the greater malefic, significator of limitation, endurance, old age, and hidden labour"
+  },
+
+  "sign_natures": {
+    "Aries":       "a masculine, cardinal fire sign, swift and pioneering",
+    "Taurus":      "a feminine, fixed earth sign, steady and fruitful",
+    "Gemini":      "a masculine, mutable air sign, clever and many-sided",
+    "Cancer":      "a feminine, cardinal water sign, tender and moved by the Moon's tides",
+    "Leo":         "a masculine, fixed fire sign, regal and magnanimous",
+    "Virgo":       "a feminine, mutable earth sign, discerning and exacting",
+    "Libra":       "a masculine, cardinal air sign, weighing and seeking measure",
+    "Scorpio":     "a feminine, fixed water sign, secret and penetrating",
+    "Sagittarius": "a masculine, mutable fire sign, far-seeing and oracular",
+    "Capricorn":   "a feminine, cardinal earth sign, patient and ambitious",
+    "Aquarius":    "a masculine, fixed air sign, austere and society-minded",
+    "Pisces":      "a feminine, mutable water sign, devoted and dissolving boundaries"
+  },
+
+  "planet_in_sign_special": [
+    { "planet": "sun",     "sign": "Leo",         "text": "The Sun in his own domicile of Leo burns with full dignity: the native is drawn toward authority and will not easily consent to serve beneath others." },
+    { "planet": "sun",     "sign": "Aries",       "text": "The Sun exalted in Aries signifies boldness, visible leadership, and a spirit eager to begin." },
+    { "planet": "sun",     "sign": "Libra",       "text": "The Sun is in his Fall in Libra; the native's authority is weighed against others, and reputation depends upon partnership and counsel." },
+    { "planet": "sun",     "sign": "Aquarius",    "text": "The Sun in his detriment in Aquarius inclines the native to serve a collective or abstract cause rather than a single sovereign." },
+
+    { "planet": "moon",    "sign": "Cancer",      "text": "The Moon in her own domicile of Cancer waxes in her proper nature: the native is close to his mother, to the land of birth, and to the ebb and flow of feeling." },
+    { "planet": "moon",    "sign": "Taurus",      "text": "The Moon exalted in Taurus blesses the body with steadiness and the household with plenty." },
+    { "planet": "moon",    "sign": "Scorpio",     "text": "The Moon in her Fall in Scorpio turns the soul toward hidden things; griefs are long-held and trust is given slowly." },
+    { "planet": "moon",    "sign": "Capricorn",   "text": "The Moon in her detriment in Capricorn inclines the native to cold composure in place of open affection." },
+
+    { "planet": "mercury", "sign": "Gemini",      "text": "Mercury in his airy domicile of Gemini makes the tongue quick and the hand apt for writing; learning comes through variety." },
+    { "planet": "mercury", "sign": "Virgo",       "text": "Mercury in Virgo, his domicile and exaltation, is a signification of exacting intelligence: useful for craft, medicine, and the keeping of accounts." },
+    { "planet": "mercury", "sign": "Sagittarius", "text": "Mercury in his detriment in Sagittarius reaches for large views and may lose patience with small exactitudes." },
+    { "planet": "mercury", "sign": "Pisces",      "text": "Mercury in Pisces, his detriment and fall, reasons by images and sympathies rather than by strict argument." },
+
+    { "planet": "venus",   "sign": "Taurus",      "text": "Venus in her domicile of Taurus brings pleasure in what is cultivated and lasting — gardens, fine fabrics, and affections that endure." },
+    { "planet": "venus",   "sign": "Libra",       "text": "Venus in her airy domicile of Libra inclines the native toward marriage, diplomacy, and the arts of measure." },
+    { "planet": "venus",   "sign": "Pisces",      "text": "Venus exalted in Pisces gives a soft and devotional love, prone to sacrifice, sensitive to music and to sorrow." },
+    { "planet": "venus",   "sign": "Aries",       "text": "Venus in her detriment in Aries loves impulsively and may weary of what she has won." },
+    { "planet": "venus",   "sign": "Virgo",       "text": "Venus in her fall in Virgo distrusts her own desires and seeks to refine or correct them." },
+
+    { "planet": "mars",    "sign": "Aries",       "text": "Mars in his fiery domicile of Aries gives vigor, independence, and a readiness to contend. The native meets opposition head-on." },
+    { "planet": "mars",    "sign": "Scorpio",     "text": "Mars in his nocturnal domicile of Scorpio is a strategist in conflict, keeping his strength in reserve until the decisive moment." },
+    { "planet": "mars",    "sign": "Capricorn",   "text": "Mars exalted in Capricorn signifies disciplined force: ambition tempered by patience, arms directed to lasting conquest." },
+    { "planet": "mars",    "sign": "Cancer",      "text": "Mars in his fall in Cancer turns aggression inward; quarrels fester in the home before they are released." },
+    { "planet": "mars",    "sign": "Libra",       "text": "Mars in his detriment in Libra provokes conflicts out of a desire to be met as an equal; strife tests every partnership." },
+
+    { "planet": "jupiter", "sign": "Sagittarius", "text": "Jupiter in his fiery domicile of Sagittarius expands the native's horizons: travel, teaching, and the counsel of wise elders attend him." },
+    { "planet": "jupiter", "sign": "Pisces",      "text": "Jupiter in his watery domicile of Pisces blesses the native with compassion and with benefactors in unexpected quarters." },
+    { "planet": "jupiter", "sign": "Cancer",      "text": "Jupiter exalted in Cancer prospers the household: parents, land, and inheritances are signified to be favourable." },
+    { "planet": "jupiter", "sign": "Gemini",      "text": "Jupiter in his detriment in Gemini scatters its blessings into too many pursuits; the native must choose a single branch of learning." },
+    { "planet": "jupiter", "sign": "Capricorn",   "text": "Jupiter in his fall in Capricorn mistrusts generosity and may grow miserly against his own better nature." },
+
+    { "planet": "saturn",  "sign": "Capricorn",   "text": "Saturn in his earthy domicile of Capricorn bears weight without complaint: the native is built for long labour and late reward." },
+    { "planet": "saturn",  "sign": "Aquarius",    "text": "Saturn in his airy domicile of Aquarius binds the native to institutions, to law, and to the slow improvement of a commonwealth." },
+    { "planet": "saturn",  "sign": "Libra",       "text": "Saturn exalted in Libra dignifies the judge and the lawmaker; the native's word carries weight in the assemblies of others." },
+    { "planet": "saturn",  "sign": "Cancer",      "text": "Saturn in his detriment in Cancer brings coldness to the place of the mother; the early home knew austerity." },
+    { "planet": "saturn",  "sign": "Leo",         "text": "Saturn in his detriment in Leo weighs heavily on the heart; authority is sought but feels burdensome when obtained." },
+    { "planet": "saturn",  "sign": "Aries",       "text": "Saturn in his fall in Aries restrains the impulse to begin; initiatives are delayed until they can bear scrutiny." }
+  ],
+
+  "planet_in_house": [
+    { "planet": "sun", "house": 1,  "text": "With the Sun in the Horoskopos, the native's life-course is public and visible; he is known by sight and remembered by name." },
+    { "planet": "sun", "house": 4,  "text": "The Sun in the Subterranean Place signifies the father and the ancestral home; authority is bequeathed rather than seized." },
+    { "planet": "sun", "house": 7,  "text": "The Sun in the Place of Setting signifies that partnership is the arena in which the native shines or is dimmed." },
+    { "planet": "sun", "house": 10, "text": "The Sun in the Midheaven is the most splendid placement for reputation: the native is summoned to hold authority in view of all." },
+    { "planet": "sun", "house": 12, "text": "The Sun in the Bad Daimon labours under hidden enemies; reputation is won with effort and must be guarded against slander." },
+
+    { "planet": "moon", "house": 1,  "text": "The Moon in the Horoskopos tempers the body and mood of the native; fortunes wax and wane with her own phases." },
+    { "planet": "moon", "house": 4,  "text": "The Moon in the Subterranean Place gives a strong attachment to the mother, to ancestral land, and to the private hearth." },
+    { "planet": "moon", "house": 9,  "text": "The Moon in the Place of God inclines the native to pilgrimage, foreign shores, and the sympathies of dreams." },
+    { "planet": "moon", "house": 10, "text": "The Moon in the Midheaven makes the native's reputation itself a matter of public tides — loved and forgotten by turns." },
+
+    { "planet": "mercury", "house": 1,  "text": "Mercury in the Horoskopos inclines the native to early learning and to a ready tongue; he is a writer or messenger in some manner." },
+    { "planet": "mercury", "house": 3,  "text": "Mercury in the Goddess rejoices in her own Place; siblings, letters, and short journeys fill the life with news." },
+    { "planet": "mercury", "house": 6,  "text": "Mercury in the Place of Bad Fortune turns the intellect to small matters — illnesses, servants, daily tasks; a useful placement for physicians and clerks." },
+    { "planet": "mercury", "house": 10, "text": "Mercury in the Midheaven lifts the native to reputation by the work of the pen, the voice, or the ledger." },
+
+    { "planet": "venus", "house": 1,  "text": "Venus in the Horoskopos grants the native a pleasing person and a kindly disposition; others are drawn toward him without effort." },
+    { "planet": "venus", "house": 4,  "text": "Venus in the Subterranean Place beautifies the home and softens the ending of life." },
+    { "planet": "venus", "house": 5,  "text": "Venus in the Place of Good Fortune rejoices in her own joy; children, pleasures, and the arts prosper the native." },
+    { "planet": "venus", "house": 7,  "text": "Venus in the Place of Setting is the most favourable placement for marriage: union is sought and generally achieved." },
+    { "planet": "venus", "house": 11, "text": "Venus in the Good Daimon gives loyal friendships and pleasing patrons; hopes are largely fulfilled." },
+
+    { "planet": "mars", "house": 1,  "text": "Mars in the Horoskopos makes the native restless and combative; bodily scars or marks are often signified." },
+    { "planet": "mars", "house": 6,  "text": "Mars in the Place of Bad Fortune rejoices: conflict with illnesses, servants, or small enemies is expected, but the native has the means to prevail." },
+    { "planet": "mars", "house": 7,  "text": "Mars in the Place of Setting signals quarrelsome partnerships or disputes with open adversaries; caution is advised in contracts." },
+    { "planet": "mars", "house": 10, "text": "Mars in the Midheaven signals a career of contention: arms, surgery, advocacy, or any craft that requires iron." },
+    { "planet": "mars", "house": 12, "text": "Mars in the Bad Daimon rejoices: the native fights unseen enemies and may suffer from them if benefics do not intervene." },
+
+    { "planet": "jupiter", "house": 1,  "text": "Jupiter in the Horoskopos is among the most fortunate placements: the native is born under good auspices and carries them through life." },
+    { "planet": "jupiter", "house": 4,  "text": "Jupiter in the Subterranean Place signifies inheritance, flourishing home, and a beneficent father-figure." },
+    { "planet": "jupiter", "house": 9,  "text": "Jupiter in the Place of God rejoices: philosophy, religion, and long travel bring the native his greatest goods." },
+    { "planet": "jupiter", "house": 10, "text": "Jupiter in the Midheaven signifies honour and high office, particularly in matters of counsel, law, or teaching." },
+    { "planet": "jupiter", "house": 11, "text": "Jupiter in the Good Daimon rejoices: the native is rich in friends, benefactors, and the fulfilment of hopes." },
+
+    { "planet": "saturn", "house": 1,  "text": "Saturn in the Horoskopos makes the native grave and self-contained from youth; early life is marked by responsibility or restriction." },
+    { "planet": "saturn", "house": 4,  "text": "Saturn in the Subterranean Place signifies a burdened father, an austere home, or a long tenancy of ancestral land." },
+    { "planet": "saturn", "house": 7,  "text": "Saturn in the Place of Setting delays marriage or signifies a partner much older or more severe than the native." },
+    { "planet": "saturn", "house": 10, "text": "Saturn in the Midheaven rejoices by the old authors: the native rises slowly but firmly to lasting authority." },
+    { "planet": "saturn", "house": 12, "text": "Saturn in the Bad Daimon signifies hidden griefs, long confinements, or an occupation with the dead or the penitent." }
+  ],
+
+  "fortune_in_house": [
+    { "house": 1,  "text": "With the Lot of Fortune in the Horoskopos, the body itself is the vehicle of the native's fortune; prosperity rises and falls with health and presence." },
+    { "house": 2,  "text": "Fortune in the Gate of Hades signifies livelihood won by one's own hand; money comes and goes, but the means of earning endures." },
+    { "house": 3,  "text": "Fortune in the Goddess signifies fortune through siblings, short journeys, and written communications." },
+    { "house": 4,  "text": "Fortune in the Subterranean Place signifies inheritance, fortune from the land, and the blessings of the father's line." },
+    { "house": 5,  "text": "Fortune in the Place of Good Fortune is well-placed: pleasures, children, and creative ventures are the soil of the native's prosperity." },
+    { "house": 6,  "text": "Fortune in the Place of Bad Fortune is a difficult placement; prosperity must be won through illness, servitude, or labour with lesser adversaries." },
+    { "house": 7,  "text": "Fortune in the Place of Setting signifies that prosperity comes by way of marriage, partnership, or one's open adversaries." },
+    { "house": 8,  "text": "Fortune in the Idle Place is an adverse placement; fortune arrives through legacies, the dead, or affairs long out of sight." },
+    { "house": 9,  "text": "Fortune in the Place of God signifies prosperity from long travel, philosophy, religion, or the foreign." },
+    { "house": 10, "text": "Fortune in the Midheaven is excellent: prosperity is bound up with career, reputation, and the favour of authorities." },
+    { "house": 11, "text": "Fortune in the Good Daimon is among the most favourable placements: friends, benefactors, and hopes are the instruments of prosperity." },
+    { "house": 12, "text": "Fortune in the Bad Daimon is adverse: prosperity comes by hidden means, in exile, or against slanderers." }
+  ],
+
+  "lord_of_year": [
+    { "lord": "sun",     "text": "In a Sun-ruled year, matters of rulership, public office, and the father come to the fore; the native seeks visibility and is judged by his bearing." },
+    { "lord": "moon",    "text": "In a Moon-ruled year, matters of the mother, the body, the household, and emotional rhythms become prominent; the year has the quality of ebb and flow." },
+    { "lord": "mercury", "text": "In a Mercury-ruled year, matters of learning, writing, commerce, siblings, and short journeys come to the fore; news and negotiations shape the year." },
+    { "lord": "venus",   "text": "In a Venus-ruled year, matters of love, marriage, pleasure, and the arts come to the fore; partnerships and aesthetic pursuits prosper." },
+    { "lord": "mars",    "text": "In a Mars-ruled year, matters of contention, courage, arms, and surgery come to the fore; the year demands action and does not reward hesitation." },
+    { "lord": "jupiter", "text": "In a Jupiter-ruled year, matters of expansion, patronage, philosophy, travel, and honour come to the fore; benefactors appear, and opportunities multiply." },
+    { "lord": "saturn",  "text": "In a Saturn-ruled year, matters of endurance, responsibility, limitation, and old things come to the fore; the year asks for patience and rewards discipline." }
+  ]
+}

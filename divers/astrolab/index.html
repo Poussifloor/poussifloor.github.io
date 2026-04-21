@@ -1,0 +1,234 @@
+---
+layout: page
+title: /divers/astrolab.exe
+---
+
+
+
+
+
+<div style="text-align: center;">
+  <pre style="display: inline-block; text-align: left; line-height: 1.2; font-family: 'Courier New', Courier, monospace; font-size: 14px; letter-spacing: 0; white-space: pre;">
+
+                                              ░░                                         ░▓ ▓▓      
+       ▒▒▒▒▒▒▒▒▒▒▒▒▒▒     ░░░░░░░░░▒░         ▓█               ▓▓▓▓▓▓▓▓▓▓                 ▓█ ▓░     
+                   ██     ░▒▒▒░░░░▓█░         ▓█                               ▓████████████        
+             ▓░   █▓             ░█▒          ▓█                         ░                ██        
+            ░█░░▓█▒             ░█▓           ▓██▒░          ▒▓▓▓▓▓▓▓▓▓▓██▒              ▒█░        
+            ░█ ░               ▒█▓            ▓█ ░▓██▓                  ██              ░█▒         
+            █▓               ▒██▒▓█▒          ▓█    ░▒█▒               ▓█              ▒█▒          
+          ░██              ░██▒   ░██░        ▓█                     ▒█▓             ▒██░           
+        ▒██▒            ░███░       ▒██       ▓█                 ░▓██▒            ░███              
+       ▒▒░               ░            ░       ▒▓                 ▒▒░             ▓▓▒                
+
+    </pre>
+</div> 
+
+
+
+<div style="text-align: center;">
+  <pre id="sign-art" style="display: inline-block; text-align: left; font-family: 'VT323', 'Courier New', monospace; letter-spacing: 0;font-size: larger;line-height: 0.8;transform: scaleX(1.3);transform-origin: center;">
+.         _  .          .          .    +     .          .          .      .
+        .(_)          .            .            .            .       :
+        .   .      .    .     .     .    .      .   .      . .  .  -+-        .
+          .           .   .        .           .          /         :  .
+    . .        .  .      /.   .      .    .     .     .  / .      . ' .
+        .  +       .    /     .          .          .   /      .
+       .            .  /         .            .        *   .         .     .
+      .   .      .    *     .     .    .      .   .       .  .
+          .           .           .           .           .         +  .
+  . .        .  .       .   .      .    .     .     .    .      .   .
+
+ .   +      .          ___/\_._/~~\_...__/\__.._._/~\        .         .   .
+       .          _.--'                              `--./\          .   .
+           /~~\/~\                                         `-/~\_            .
+ .      .-'                                                      `-/\_
+  _/\.-'                                                          __/~\/\-.__
+.'                                                                           `.<a href="https://asciiart.website/art/6959" style="border-bottom: 0px">dp</a> 
+    </pre>
+</div>
+
+
+
+
+
+<div id="lsystem-ui" style="display:block;">
+  <div class="dim" style="margin-bottom:0.8rem; line-height:1.8;">
+  </div>
+
+  <div id="ls-plot" style="margin-top:1.2rem; text-align:center;"></div>
+</div>
+
+<script>
+  (function () {
+    const SIGNS = {
+      aries:       'Mar 21 – Apr 19   fire · cardinal',
+      taurus:      'Apr 20 – May 20   earth · fixed',
+      gemini:      'May 21 – Jun 20   air · mutable',
+      cancer:      'Jun 21 – Jul 22   water · cardinal',
+      leo:         'Jul 23 – Aug 22   fire · fixed',
+      virgo:       'Aug 23 – Sep 22   earth · mutable',
+      libra:       'Sep 23 – Oct 22   air · cardinal',
+      scorpio:     'Oct 23 – Nov 21   water · fixed',
+      sagittarius: 'Nov 22 – Dec 21   fire · mutable',
+      capricorn:   'Dec 22 – Jan 19   earth · cardinal',
+      aquarius:    'Jan 20 – Feb 18   air · fixed',
+      pisces:      'Feb 19 – Mar 20   water · mutable',
+    };
+
+    const SIGNS_ART = {
+      aries:       ` .-.   .-.
+(_  \ /  _)    Aries-  The Ram
+     |
+     |`,
+      taurus:      ` .     .
+ '.___.'      Taurus-  The Bull
+ .'   '.
+:       :
+:       :
+ '.___.'`,
+      gemini:      `._____.
+  | |        Gemini-  The Twins
+  | |
+ _|_|_
+'     '
+`,
+      cancer:      `   .--.
+  /   _'.     Cancer-  The Crab
+ (_) ( )
+'.    /
+  '--'
+`,
+      leo:         `      .--.
+     (    )       Leo-  The Lion
+    (_)  /
+        (_,`,
+      virgo:       ` _
+' ':--.--.
+   |  |  |_     Virgo-  The Virgin
+   |  |  | )
+   |  |  |/
+        (J`,
+      libra:       `     __
+___.'  '.___   Libra-  The Balance
+____________`,
+      scorpio:     ` _
+' ':--.--.
+   |  |  |      Scorpius-  The Scorpion
+   |  |  |
+   |  |  |  ..,
+         '---':`,
+      sagittarius: `      ...
+      .':     Sagittarius-  The Archer
+    .'
+'..'
+.''.`,
+      capricorn:   `        _
+\\      /_)    Capricorn-  The Goat
+ \\    /'.
+  \\  /   ;
+   \\/ __.'`,
+      aquarius:    ` .-"-._.-"-._.-   Aquarius-  The Water Bearer
+ .-"-._.-"-._.-`,
+      pisces:      `   '-.    .-'   Pisces-  The Fishes
+      :  :
+    --:--:--
+      :  :
+   .-'    '-.
+`,
+    };
+
+    const pre = document.getElementById('sign-art');
+    const DEFAULT_ART = pre ? pre.textContent : '';
+
+    const CATEGORIES = ['day', 'work', 'love', 'family', 'money'];
+    const TEXTS = {
+      day:       'terrible day, once again',
+      work:      'I love working!',
+      love:      'May love be within me',
+      family:      'no way that is real',
+      money:         'no money, no problem',
+    };
+
+    function astrolab(args, { print, printError }) {
+      const [sub] = args;
+
+      if (!sub || sub === 'help') {
+        return print([
+          '> astrolab:',
+          '  astrolab help           show this message',
+          '  astrolab signs          list zodiac signs',
+          '  astrolab <sign>         show details + art for a sign',
+          '  astrolab natal          compute a Hellenistic natal chart',
+          '  astrolab reset          restore default art',
+          '  astrolab test           prompt-mode smoke test',
+        ]);
+      }
+
+      if (sub === 'natal') {
+        if (window.astrolabNatal) return window.astrolabNatal(args.slice(1), { print, printError });
+        return printError('astrolab natal: not loaded yet, try again in a moment.');
+      }
+
+      if (sub === 'test') {
+        return window.TERM.prompt(
+          [{ key: 'date of birth (dd/mm/yyyy)' }],
+          (a, { print }) => {
+            if (a.greeting === 'Hi') print('> hello');
+            else                     print('> No night for the damned');
+          }
+        );
+      }
+
+      if (sub === 'testtest') {
+        return window.TERM.prompt(
+            [
+              { key: 'date (yyyy-mm-dd)',  validate: s => /^\d{4}-\d{2}-\d{2}$/.test(s) },
+              { key: 'time (hh:mm)',  validate: s => /^\d{2}:\d{2}$/.test(s) },
+              { key: 'place' },
+            ],
+            (a, ctx) => { window.handleLookup(a.place, ctx); }
+        );
+      }
+
+      if (sub === 'signs') {
+        return print(['> signs:', ...Object.keys(SIGNS).map(s => '  ' + s)]);
+      }
+
+      if (sub === 'reset') {
+        if (pre) pre.textContent = DEFAULT_ART;
+        return print('> art reset.');
+      }
+
+      if (SIGNS[sub]) {
+        if (pre) pre.textContent = SIGNS_ART[sub];
+        new Audio('/divers/astrolab/shooting_star_sound.wav').play().catch(() => {});
+        const pad = Math.max(...CATEGORIES.map(c => c.length)) + 2;
+        const lines = ['> ' + sub, '  ' + SIGNS[sub], ''];
+        lines.push('---------------------');
+        CATEGORIES.forEach(cat => {
+          const m = Math.floor(Math.random() * 5) + 1;
+          const stars = '★'.repeat(m) + '☆'.repeat(5 - m);
+          const label = (cat + ':').padEnd(pad, ' ');
+          lines.push('  ' + label + stars + '  ' + TEXTS[cat]);
+        });
+        return print(lines);
+      }
+
+      return printError('astrolab: unknown sign or subcommand: ' + sub);
+    }
+
+    astrolab.help = 'astrolab <sign>         show sign details + daily marks';
+    window.PAGE_COMMANDS = window.PAGE_COMMANDS || {};
+    window.PAGE_COMMANDS.astrolab = astrolab;
+  })();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/astronomy-engine@2.1.19/astronomy.browser.min.js"></script>
+<script src="/divers/astrolab/engine.js"></script>
+<script src="/divers/astrolab/astronomy.js"></script>
+<script src="/divers/astrolab/interpreter.js"></script>
+<script src="/divers/astrolab/ascii_render.js"></script>
+<script src="/divers/astrolab/main.js"></script>
+
+

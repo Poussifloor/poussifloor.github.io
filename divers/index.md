@@ -1,7 +1,11 @@
 ---
 layout: page
 title: /divers
-permalink: /divers/
+ls:
+  - astrolab
+  - graines
+  - cine
+  - fractal
 ---
 
 <p>Trucs divers.</p>

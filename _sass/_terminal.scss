@@ -8,6 +8,8 @@
 
 .prompt-row span { white-space: nowrap; flex-shrink: 0; }
 
+#term-out > div { white-space: pre; }
+
 .ascii {
   font-family: 'VT323', 'Courier New', monospace;
   color: #ffe066;
@@ -62,4 +64,12 @@ a:hover { border-bottom-color: #ffe066; }
 .terminal-footer-actions {
   display: flex;
   gap: 0.5rem;
+}
+
+pre {
+  font-family: 'VT323', 'Courier New', monospace;
+  color: #ffe066;
+  line-height: 0.8;
+  background: transparent;
+  border: none;
 }
