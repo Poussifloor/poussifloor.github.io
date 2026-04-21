@@ -1,0 +1,41 @@
+---
+layout: page
+title: /.../snake/
+ls:
+  - snake.html
+  - snake.js
+---
+
+<pre id="snake-grid" style="display:none; line-height:0.6; background:transparent; border:none; margin:0;"></pre>
+<script src="/user/personal/snake/snake.js"></script>
+<script>
+(function () {
+  const grid = document.getElementById('snake-grid');
+  const getPromptRow = () => document.querySelector('.prompt-row');
+  const getInput     = () => document.getElementById('answer');
+
+  window.SNAKE_OUTPUT = (text) => { grid.textContent = text; };
+
+  window.SNAKE_DONE = () => {
+    grid.style.display = 'none';
+    const promptRow = getPromptRow();
+    const input     = getInput();
+    if (promptRow) promptRow.style.display = '';
+    if (input) input.focus();
+  };
+
+  window.PAGE_COMMANDS = window.PAGE_COMMANDS || {};
+  window.PAGE_COMMANDS['snake'] = function (args, term) {
+    if (!args[0] || args[0] !== 'run') {
+      term.print('usage: snake run');
+      return;
+    }
+    const promptRow = getPromptRow();
+    if (promptRow) promptRow.style.display = 'none';
+    grid.style.display = 'block';
+    window.snakeStart();
+  };
+
+  window.PAGE_COMMANDS['snake'].help = 'snake run               launch the snake game';
+})();
+</script>
