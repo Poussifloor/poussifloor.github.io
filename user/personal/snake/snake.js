@@ -1,6 +1,5 @@
-const H = 20;
-const L = 40;
-const gridSize = H * L;
+window.SNAKE = { H: 20, L: 40, s: 5, fps_min: 60 };
+
 const SYMBOLS = {
   head:  'O',
   body:  'x',
@@ -11,8 +10,8 @@ const SYMBOLS = {
 let grid, snake, food, direction, score, gameActive, loopInterval;
 
 function snakeInit() {
-  grid       = Array(gridSize).fill(SYMBOLS.empty);
-  snake      = [Math.floor(H / 2) * L + Math.floor(L / 2)];
+  grid       = Array(window.SNAKE.H * window.SNAKE.L).fill(SYMBOLS.empty);
+  snake      = [Math.floor(window.SNAKE.H / 2) * window.SNAKE.L + Math.floor(window.SNAKE.L / 2)];
   direction  = 'RIGHT';
   score      = 0;
   gameActive = true;
@@ -23,14 +22,14 @@ function snakeInit() {
 
 function snakeSpawnFood() {
   let pos;
-  do { pos = Math.floor(Math.random() * gridSize); }
+  do { pos = Math.floor(Math.random() * window.SNAKE.H * window.SNAKE.L); }
   while (snake.includes(pos));
   food = pos;
 }
 
 function snakeSpeedUp() {
   clearInterval(loopInterval);
-  const delay = Math.max(60, 150 * Math.pow(0.95, score)); // faster each point, min 60ms
+  const delay = Math.max(window.SNAKE.fps_min, 150 * Math.pow(1-window.SNAKE.s/100, score)); // faster each point, min fps_min ms
   loopInterval = setInterval(snakeLoop, delay);
 }
 
@@ -38,37 +37,36 @@ function snakeSpeedUp() {
 function snakeMove() {
   const head = snake[0];
   let next;
-  if (direction === 'UP')    next = head - L;
-  if (direction === 'DOWN')  next = head + L;
+  if (direction === 'UP')    next = head - window.SNAKE.L;
+  if (direction === 'DOWN')  next = head + window.SNAKE.L;
   if (direction === 'LEFT')  next = head - 1;
   if (direction === 'RIGHT') next = head + 1;
   snake.unshift(next);
-  snakeSpeedUp();
-  if (next === food) { score++; snakeSpawnFood(); }
+  if (next === food) { score++; snakeSpeedUp(); snakeSpawnFood(); }
   else snake.pop();
 }
 
 function snakeCheckOver() {
   const head = snake[0];
-  const col  = head % L;
-  if (head < 0 || head >= gridSize)          return true;
-  if (col === L - 1 && direction === 'RIGHT') return true;
-  if (col === 0     && direction === 'LEFT')  return true;
+  const col  = head % window.SNAKE.L;
+  if (head < 0 || head >= window.SNAKE.H * window.SNAKE.L)  return true;
+  if (col === window.SNAKE.L - 1 && direction === 'RIGHT')  return true;
+  if (col === 0     && direction === 'LEFT')                return true;
   for (let i = 1; i < snake.length; i++) {
-    if (snake[i] === head) return true;
+    if (snake[i] === head)                                  return true;
   }
   return false;
 }
 
 function snakeRender() {
-  grid = Array(gridSize).fill(SYMBOLS.empty);
+  grid = Array(window.SNAKE.H * window.SNAKE.L).fill(SYMBOLS.empty);
   grid[food] = SYMBOLS.apple;
   for (let i = 1; i < snake.length; i++) grid[snake[i]] = SYMBOLS.body;
   grid[snake[0]] = SYMBOLS.head;
 
   let out = 'score: ' + score + '\n\n';
-  for (let i = 0; i < H; i++) {
-    out += grid.slice(i * L, i * L + L).join('') + '\n';
+  for (let i = 0; i < window.SNAKE.H; i++) {
+    out += grid.slice(i * window.SNAKE.L, i * window.SNAKE.L + window.SNAKE.L).join('') + '\n';
   }
   out += '\narrows to move  |  q to quit';
   window.SNAKE_OUTPUT(out);
@@ -84,8 +82,8 @@ function snakeOver() {
 }
 
 function snakeLoop() {
-  snakeMove();
   if (snakeCheckOver()) { snakeOver(); return; }
+  snakeMove();
   snakeRender();
 }
 

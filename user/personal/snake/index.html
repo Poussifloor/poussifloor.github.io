@@ -25,16 +25,74 @@ ls:
   };
 
   window.PAGE_COMMANDS = window.PAGE_COMMANDS || {};
-  window.PAGE_COMMANDS['snake'] = function (args, term) {
-    if (!args[0] || args[0] !== 'run') {
-      term.print('usage: snake run');
-      return;
-    }
-    const promptRow = getPromptRow();
-    if (promptRow) promptRow.style.display = 'none';
-    grid.style.display = 'block';
-    window.snakeStart();
-  };
+  // window.PAGE_COMMANDS['snake'] = function (args, term) {
+  //   if (!args[0] || args[0] !== 'run') {
+  //     term.print('usage: snake run');
+  //     return;
+  //   }
+  //   const promptRow = getPromptRow();
+  //   if (promptRow) promptRow.style.display = 'none';
+  //   grid.style.display = 'block';
+  //   window.snakeStart();
+  // };
+
+  window.PAGE_COMMANDS['snake'] = function (args, { print, printError }) {
+    const [sub] = args;
+
+      if (!sub || sub === 'help') {
+        return print([
+          '> snake:',
+          '  snake help               show this message',
+          '  snake run                launch the snake game',
+          '  snake grid               change grid dimension',
+          '  snake speed <%>          change speed indentation',
+          '  snake fps_min <ms>       change minimum framerate',
+        ]);
+      }
+
+      if (sub === 'run') {
+        const promptRow = getPromptRow();
+        if (promptRow) promptRow.style.display = 'none';
+        grid.style.display = 'block';
+        window.snakeStart();
+        return;
+      }
+
+      if (sub === 'grid') {
+        return window.TERM.prompt(
+            [
+              { key: 'height', validate: s => Number.isInteger(+s) && +s > 0 },
+              { key: 'width',  validate: s => Number.isInteger(+s) && +s > 0 },
+            ],
+            (a, ctx) => { 
+              window.SNAKE.H = +a.height;
+              window.SNAKE.L = +a.width;
+              snakeInit(); // restart with new dimensions
+              ctx.print('> grid set to ' + L + 'x' + H);}
+        );
+      }
+
+      if (sub === 'speed') {
+        const val = +args[1];
+        if (!args[1] || !Number.isInteger(val) || val <= 0) {
+          return printError('usage: snake speed <integer>');
+        }
+        window.SNAKE.s = val;
+        return print('> speed set to ' + val);
+      }
+
+      if (sub === 'fps_min') {
+        const val = +args[1];
+        if (!args[1] || !Number.isInteger(val) || val <= 0) {
+          return printError('usage: snake fps_min <integer>');
+        }
+        print('> refresh set from '+fps_min+' ms to ' + val + 'ms');
+        window.SNAKE.fps_min = val;
+        return;
+      }
+
+      return printError('snake: unknown subcommand: ' + sub);
+    };
 
   window.PAGE_COMMANDS['snake'].help = 'snake run               launch the snake game';
 })();
