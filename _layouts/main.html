@@ -23,7 +23,12 @@
   <div class="terminal">
     {{ content }}
   </div>
-  <script>window.PAGE_LS = {{ page.ls | jsonify }};</script>
-  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+
+  <script>
+  window.PAGE_URL = "{{ page.url }}";
+  window.PAGE_LS  = {{ page.ls | jsonify }};
+</script>
+<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+
 </body>
 </html>

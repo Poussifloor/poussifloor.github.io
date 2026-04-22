@@ -7,6 +7,7 @@ ls:
 ---
 
 <pre id="snake-grid" style="display:none; line-height:0.6; background:transparent; border:none; margin:0;"></pre>
+
 <script src="/user/personal/snake/snake.js"></script>
 <script>
 (function () {
@@ -25,16 +26,6 @@ ls:
   };
 
   window.PAGE_COMMANDS = window.PAGE_COMMANDS || {};
-  // window.PAGE_COMMANDS['snake'] = function (args, term) {
-  //   if (!args[0] || args[0] !== 'run') {
-  //     term.print('usage: snake run');
-  //     return;
-  //   }
-  //   const promptRow = getPromptRow();
-  //   if (promptRow) promptRow.style.display = 'none';
-  //   grid.style.display = 'block';
-  //   window.snakeStart();
-  // };
 
   window.PAGE_COMMANDS['snake'] = function (args, { print, printError }) {
     const [sub] = args;
@@ -86,7 +77,7 @@ ls:
         if (!args[1] || !Number.isInteger(val) || val <= 0) {
           return printError('usage: snake fps_min <integer>');
         }
-        print('> refresh set from '+fps_min+' ms to ' + val + 'ms');
+        print('> refresh set from '+window.SNAKE.fps_min+' ms to ' + val + 'ms');
         window.SNAKE.fps_min = val;
         return;
       }
@@ -94,6 +85,6 @@ ls:
       return printError('snake: unknown subcommand: ' + sub);
     };
 
-  window.PAGE_COMMANDS['snake'].help = 'snake run               launch the snake game';
+  window.PAGE_COMMANDS['snake'].help = 'snake <args>               snake commands';
 })();
 </script>

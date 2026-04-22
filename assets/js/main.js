@@ -183,16 +183,66 @@
       'cd <path>               navigate to path',
       'color <arg>             change color settings (try: color help)',
       'help                    show this message',
+      'read <filename>         display a .txt file in current directory',
     ];
     const pageCmds = window.PAGE_COMMANDS || {};
     const pageLines = Object.values(pageCmds)
       .map(fn => fn && fn.help)
       .filter(Boolean);
     const hint = unlocked
-      ? ['', '  (unlocked) try: konami, ghost, void']
+      ? ['', '(unlocked) try: konami, ghost, void']
       : ['', '  some commands are not listed here.'];
     print(['> help:', ...visible, ...pageLines, ...hint]);
   }
+
+function linkify(text) {
+  const parts = text.split(/(\[[^\]]+\]\([^\)]+\)|https?:\/\/[^\s]+)/g);
+  return parts.map((part, i) => {
+    if (i % 2 === 1) {
+      const md = part.match(/^\[([^\]]+)\]\(([^\)]+)\)$/);
+      if (md) return '<a href="' + md[2] + '">' + md[1] + '</a>';
+      return '<a href="' + part + '">' + part + '</a>';
+    }
+    return part.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }).join('');
+}
+
+async function cmdRead(args) {
+  const name = args[0];
+  if (!name || name === 'help') {
+    return print([
+      '> read:',
+      '  read <filename>         display a .txt file',
+      '  read help               show this message',
+    ]);
+  }
+
+  const base     = (window.PAGE_URL || '/').replace(/\/?$/, '/');
+  const filename = name.endsWith('.txt') ? name : name + '.txt';
+  const url      = base + filename;
+
+  let text;
+  try {
+    const res = await fetch(url);
+    if (!res.ok) { printError('read: cannot find "' + name + '"'); return; }
+    text = await res.text();
+  } catch (e) {
+    printError('read: network error');
+    return;
+  }
+
+  // find or create a <pre> to display the content
+  let pre = document.getElementById('term-read-out');
+  if (!pre) {
+    pre = document.createElement('pre');
+    pre.id = 'term-read-out';
+    pre.style.cssText = 'line-height:1.4; background:transparent; border:none; margin:0.5rem 0; white-space:pre-wrap;';
+    out.insertAdjacentElement('afterend', pre);
+  }
+  pre.innerHTML = linkify(text);
+  pre.style.display = 'block';
+}
+
 
   function cmdColor(args) {
     const [sub, value] = args;
@@ -264,6 +314,9 @@
 
   // ── Router ────────────────────────────────────────────────────────────────
   function handle(raw) {
+    if (window.ON_COMMAND) window.ON_COMMAND();
+    const pre = document.getElementById('term-read-out');
+    if (pre) pre.style.display = 'none';
     const trimmed        = raw.trim();
     if (!trimmed) return;
     const [cmd, ...args] = trimmed.toLowerCase().split(/\s+/);
@@ -279,6 +332,7 @@
       case 'cd':                  return navigate(args[0]);
       case 'help':                return cmdHelp();
       case 'color':               return cmdColor(args);
+      case 'read':                return cmdRead(args);
 
       // mystery — only work if unlocked
       case 'konami': return unlocked ? cmdKonami() : navigate(trimmed);

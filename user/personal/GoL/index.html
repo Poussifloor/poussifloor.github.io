@@ -1,0 +1,35 @@
+---
+layout: page
+title: /.../GoL/
+ls:
+  - GoL.html
+  - dev.txt
+---
+
+<pre id="GoL-grid" style="display:none; line-height:1.4; background:transparent; border:none; margin:0; white-space:pre-wrap;"></pre>
+
+
+<script>
+(function () {
+  const gridEl      = document.getElementById('GoL-grid');
+  const getPromptRow = () => document.querySelector('.prompt-row');
+  const getInput     = () => document.getElementById('answer');
+
+  window.GOL_DONE = () => {
+    gridEl.style.display = 'none';
+    const promptRow = getPromptRow();
+    if (promptRow) promptRow.style.display = '';
+    const input = getInput();
+    if (input) input.focus();
+  };
+
+  window.ON_COMMAND = () => {
+  gridEl.style.display = 'none';
+};
+
+  window.PAGE_COMMANDS = window.PAGE_COMMANDS || {};
+
+
+
+})();
+</script>
