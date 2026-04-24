@@ -37,7 +37,7 @@ ls:
           '  snake run                launch the snake game',
           '  snake grid               change grid dimension',
           '  snake speed <%>          change speed indentation',
-          '  snake fps_min <ms>       change minimum framerate',
+          '  snake frate <ms>       change minimum framerate',
         ]);
       }
 
@@ -72,10 +72,10 @@ ls:
         return print('> speed set to ' + val);
       }
 
-      if (sub === 'fps_min') {
+      if (sub === 'frate') {
         const val = +args[1];
         if (!args[1] || !Number.isInteger(val) || val <= 0) {
-          return printError('usage: snake fps_min <integer>');
+          return printError('usage: snake frate <integer>');
         }
         print('> refresh set from '+window.SNAKE.fps_min+' ms to ' + val + 'ms');
         window.SNAKE.fps_min = val;

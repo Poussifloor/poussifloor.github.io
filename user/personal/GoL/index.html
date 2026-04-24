@@ -6,30 +6,96 @@ ls:
   - dev.txt
 ---
 
-<pre id="GoL-grid" style="display:none; line-height:1.4; background:transparent; border:none; margin:0; white-space:pre-wrap;"></pre>
+<pre id="GoL-grid" style="display:none; line-height:0.6; background:transparent; border:none; margin:0;"></pre>
 
-
+<script src="/user/personal/GoL/GoL.js"></script>
 <script>
 (function () {
-  const gridEl      = document.getElementById('GoL-grid');
+  const grid = document.getElementById('GoL-grid');
   const getPromptRow = () => document.querySelector('.prompt-row');
   const getInput     = () => document.getElementById('answer');
 
+  window.GOL_OUTPUT = (text) => { grid.textContent = text; };
+
   window.GOL_DONE = () => {
-    gridEl.style.display = 'none';
+    grid.style.display = 'none';
     const promptRow = getPromptRow();
+    const input     = getInput();
     if (promptRow) promptRow.style.display = '';
-    const input = getInput();
     if (input) input.focus();
   };
 
-  window.ON_COMMAND = () => {
-  gridEl.style.display = 'none';
-};
-
   window.PAGE_COMMANDS = window.PAGE_COMMANDS || {};
 
+  window.PAGE_COMMANDS['gol'] = function (args, { print, printError }) {
+    const [sub] = args;
+
+      if (!sub || sub === 'help') {
+        return print([
+          '> gol:',
+          '  gol help               show this message',
+          '  gol run                launch the snake game',
+          '  gol grid               change grid dimension',
+          '  gol frate <ms>       change minimum framerate',
+          '  gol stop               stop the simulation',
+          '  gol spawn              spawn new random cells',
+        ]);
+      }
+
+      if (sub === 'run') {
+        grid.style.display = 'block';
+        window.golStart();
+        return;
+      }
+
+      if (sub === 'grid') {
+        const val = +args[1];
+        if (!args[1] || !Number.isInteger(val) || val <= 0) {
+          return printError('usage: gol grid <integer>');
+        }
+        if ( val >= 200) {
+          return printError('grid size must be inferior to 200');
+        }
+        print('> size set from '+window.GOL.N+' to ' + val);
+        window.GOL.N = val;
+        return;
+      }
+
+      if (sub === 'stop') {
+        gameActive = false;
+        clearInterval(loopInterval);
+        print('> simulation stopped. type gol run to restart.');
+        return;
+      }
+
+      if (sub === 'spawn') {
+        if (!gameActive) {
+          printError('gol spawn: simulation is not running. start with gol run first.');
+          return;
+        }
+        SpawnCells();
+        renderGOL();
+        print('> cells spawned.');
+        return;
+      }
 
 
+      if (sub === 'frate') {
+        const val = +args[1];
+        if (!args[1] || !Number.isInteger(val) || val <= 0) {
+          return printError('usage: gol frate <integer>');
+        }
+        print('> refresh set from '+window.GOL.fps+' ms to ' + val + 'ms');
+        window.GOL.fps = val;
+        return;
+      }
+
+      return printError('gol: unknown subcommand: ' + sub);
+    };
+
+  window.PAGE_COMMANDS['gol'].help = 'gol <args>               gol commands';
 })();
+
+
+
 </script>
