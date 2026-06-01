@@ -1,0 +1,289 @@
+---
+layout: page
+title: /.../renderer/
+ls:
+  - renderer.js
+  - obj/
+  - www.cat.txt
+---
+
+<style>
+  /* VT323 (the terminal font) lacks Unicode block glyphs; the .blocks
+     class swaps to a monospace family that ships them so rows stay aligned. */
+  #render-out.blocks {
+    font-family: 'Menlo', 'Consolas', 'DejaVu Sans Mono', 'Courier New', monospace;
+    line-height: 1;
+  }
+</style>
+
+<pre id="render-out" style="display:none; line-height:0.9; background:transparent; border:none; margin:0;"></pre>
+
+<script src="/user/personal/renderer/renderer.js"></script>
+<script>
+(function () {
+  const pre = document.getElementById('render-out');
+
+  // Opt-in block-shade ramp. Default stays ASCII so VT323 renders cleanly.
+  window.RENDERER.useBlocks = function (on) {
+    const R = window.RENDERER;
+    if (on) {
+      R.ramp = R.rampBlocks;
+      pre.classList.add('blocks');
+    } else {
+      R.ramp = R.rampAscii;
+      pre.classList.remove('blocks');
+    }
+  };
+
+  // Bridge from the renderer to the DOM. ASCII writes plain text;
+  // color mode emits inline-styled <span>s and uses innerHTML.
+  window.RENDER_OUTPUT = (text) => {
+    if (window.RENDERER && window.RENDERER.mode === 'color') {
+      pre.innerHTML = text;
+    } else {
+      pre.textContent = text;
+    }
+  };
+
+  // ── Surface visibility ────────────────────────────────────────────────
+  // ON_COMMAND fires before every command. If we hid the pre synchronously,
+  // typing `render add sphere ...` would blank the surface and the user would
+  // never see the new sphere. Instead we schedule the hide one tick out; any
+  // `render <sub>` command cancels it synchronously, so the surface stays
+  // visible across state changes. Non-render commands (ls, cd, etc.) don't
+  // cancel, so the deferred hide fires and the pre disappears as expected.
+  let hidePending  = null;
+  let surfaceShown = false;
+
+  function showSurface() {
+    if (hidePending) { clearTimeout(hidePending); hidePending = null; }
+    pre.style.display = 'block';
+    surfaceShown = true;
+  }
+
+  function repaint() {
+    // No-op if the surface isn't visible yet, or if the animation loop is
+    // already ticking — it'll pick up the state change on its next frame.
+    if (surfaceShown && !window.RENDERER.animate) window.RENDERER.renderFrame();
+  }
+
+  window.ON_COMMAND = () => {
+    if (hidePending) clearTimeout(hidePending);
+    hidePending = setTimeout(() => {
+      pre.style.display = 'none';
+      surfaceShown = false;
+      hidePending  = null;
+    }, 0);
+  };
+
+  // Helpers --------------------------------------------------------------
+  const isHex = (s) => /^#?[0-9a-f]{6}$/i.test(s || '');
+  const normHex = (s) => (s[0] === '#' ? s : '#' + s).toLowerCase();
+  const isNum = (s) => s !== undefined && s !== '' && !isNaN(+s);
+  const num   = (s) => +s;
+
+  const HELP = [
+    '> render:',
+    '  render run                          render a single frame',
+    '  render animate                      start animation loop',
+    '  render stop                         stop animation loop',
+    '  render res <W> <H>                  set resolution in characters',
+    '  render fps <ms>                     set frame interval in ms',
+    '  render mode ascii|color             switch output mode',
+    '  render ramp ascii|blocks            switch brightness ramp',
+    '  render cam <x> <y> <z>              set camera position',
+    '  render target <x> <y> <z>           set camera look-at target',
+    '  render fov <deg>                    set horizontal field of view',
+    '  render scene                        list objects in the scene',
+    '  render add sphere <x> <y> <z> <r> [#hex]',
+    '  render add box <x> <y> <z> <hx> <hy> <hz> [#hex]',
+    '  render add plane <nx> <ny> <nz> <d> [#hex]',
+    '  render clear                        clear the scene',
+    '  render load <filename> [#hex]       load OBJ from this directory',
+    '  render help                         show this message',
+  ];
+
+  // Command -------------------------------------------------------------
+  window.PAGE_COMMANDS = window.PAGE_COMMANDS || {};
+
+  window.PAGE_COMMANDS['render'] = function (args, { print, printError, printOk }) {
+    // Cancel the hide ON_COMMAND just queued — render subs keep surface alive.
+    if (hidePending) { clearTimeout(hidePending); hidePending = null; }
+
+    const R = window.RENDERER;
+    const [sub, ...rest] = args;
+
+    if (!sub || sub === 'help') return print(HELP);
+
+    if (sub === 'run') {
+      showSurface();
+      R.renderFrame();
+      return;
+    }
+
+    if (sub === 'animate') {
+      showSurface();
+      R.start();
+      return print('> animation started (fps=' + R.fps + 'ms, speed=' + R.animSpeed + '°/frame)');
+    }
+
+    if (sub === 'stop') {
+      R.stop();
+      return print('> animation stopped.');
+    }
+
+    if (sub === 'res') {
+      const w = num(rest[0]), h = num(rest[1]);
+      if (!isNum(rest[0]) || !isNum(rest[1]) || w <= 0 || h <= 0) {
+        return printError('usage: render res <W> <H>');
+      }
+      R.W = w | 0;
+      R.H = h | 0;
+      repaint();
+      return print('> resolution set to ' + R.W + 'x' + R.H);
+    }
+
+    if (sub === 'fps') {
+      const ms = num(rest[0]);
+      if (!isNum(rest[0]) || ms <= 0) return printError('usage: render fps <ms>');
+      R.fps = ms | 0;
+      if (R.animate) { R.stop(); R.start(); }
+      return print('> frame interval set to ' + R.fps + 'ms');
+    }
+
+    if (sub === 'mode') {
+      const m = rest[0];
+      if (m !== 'ascii' && m !== 'color') return printError('usage: render mode ascii|color');
+      R.mode = m;
+      repaint();
+      return print('> mode set to ' + m);
+    }
+
+    if (sub === 'ramp') {
+      const r = rest[0];
+      if (r !== 'ascii' && r !== 'blocks') return printError('usage: render ramp ascii|blocks');
+      R.useBlocks(r === 'blocks');
+      repaint();
+      return print('> ramp set to ' + r);
+    }
+
+    if (sub === 'cam') {
+      if (!isNum(rest[0]) || !isNum(rest[1]) || !isNum(rest[2])) {
+        return printError('usage: render cam <x> <y> <z>');
+      }
+      R.camera.pos = [num(rest[0]), num(rest[1]), num(rest[2])];
+      repaint();
+      return print('> camera at (' + R.camera.pos.join(',') + ')');
+    }
+
+    if (sub === 'target') {
+      if (!isNum(rest[0]) || !isNum(rest[1]) || !isNum(rest[2])) {
+        return printError('usage: render target <x> <y> <z>');
+      }
+      R.camera.target = [num(rest[0]), num(rest[1]), num(rest[2])];
+      repaint();
+      return print('> target at (' + R.camera.target.join(',') + ')');
+    }
+
+    if (sub === 'fov') {
+      const f = num(rest[0]);
+      if (!isNum(rest[0]) || f <= 0 || f >= 180) {
+        return printError('usage: render fov <deg>   (0 < deg < 180)');
+      }
+      R.camera.fov = f;
+      repaint();
+      return print('> fov set to ' + f + '°');
+    }
+
+    if (sub === 'scene') {
+      if (R.scene.length === 0) return print('[empty]');
+      return print(R.scene.map((o, i) => R._describe(o, i)));
+    }
+
+    if (sub === 'clear') {
+      R.scene.length = 0;
+      repaint();
+      return print('> scene cleared.');
+    }
+
+    if (sub === 'add') {
+      const kind = rest[0];
+
+      if (kind === 'sphere') {
+        // render add sphere <x> <y> <z> <r> [#hex]
+        if (!isNum(rest[1]) || !isNum(rest[2]) || !isNum(rest[3]) || !isNum(rest[4])) {
+          return printError('usage: render add sphere <x> <y> <z> <r> [#hex]');
+        }
+        const color = isHex(rest[5]) ? normHex(rest[5]) : R.defaultColors.sphere;
+        R.scene.push({
+          type: 'sphere',
+          center: [num(rest[1]), num(rest[2]), num(rest[3])],
+          radius: num(rest[4]),
+          color,
+        });
+        repaint();
+        return print('> added sphere [' + (R.scene.length - 1) + ']');
+      }
+
+      if (kind === 'box') {
+        // render add box <x> <y> <z> <hx> <hy> <hz> [#hex]
+        for (let i = 1; i <= 6; i++) {
+          if (!isNum(rest[i])) return printError('usage: render add box <x> <y> <z> <hx> <hy> <hz> [#hex]');
+        }
+        const color = isHex(rest[7]) ? normHex(rest[7]) : R.defaultColors.box;
+        R.scene.push({
+          type: 'box',
+          center: [num(rest[1]), num(rest[2]), num(rest[3])],
+          half:   [num(rest[4]), num(rest[5]), num(rest[6])],
+          color,
+        });
+        repaint();
+        return print('> added box [' + (R.scene.length - 1) + ']');
+      }
+
+      if (kind === 'plane') {
+        // render add plane <nx> <ny> <nz> <d> [#hex]
+        if (!isNum(rest[1]) || !isNum(rest[2]) || !isNum(rest[3]) || !isNum(rest[4])) {
+          return printError('usage: render add plane <nx> <ny> <nz> <d> [#hex]');
+        }
+        const color = isHex(rest[5]) ? normHex(rest[5]) : R.defaultColors.plane;
+        const n = [num(rest[1]), num(rest[2]), num(rest[3])];
+        const len = Math.hypot(n[0], n[1], n[2]) || 1;
+        R.scene.push({
+          type: 'plane',
+          normal: [n[0]/len, n[1]/len, n[2]/len],
+          d: num(rest[4]),
+          color,
+        });
+        repaint();
+        return print('> added plane [' + (R.scene.length - 1) + ']');
+      }
+
+      return printError('usage: render add sphere|box|plane ...');
+    }
+
+    if (sub === 'load') {
+      const name = rest[0];
+      if (!name) return printError('usage: render load <filename> [#hex]');
+      const color = isHex(rest[1]) ? normHex(rest[1]) : R.defaultColors.mesh;
+      const base  = (window.PAGE_URL || '/').replace(/\/?$/, '/');
+      const file  = name.endsWith('.obj') ? name : name + '.obj';
+      const url   = base + file;
+
+      return fetch(url).then(res => {
+        if (!res.ok) { printError('render load: cannot find "' + name + '"'); return; }
+        return res.text();
+      }).then(text => {
+        if (!text) return;
+        const n = R.loadOBJ(text, color);
+        repaint();
+        print('> loaded ' + file + ' (' + n + ' triangles) as scene[' + (R.scene.length - 1) + ']');
+      }).catch(() => printError('render load: network error'));
+    }
+
+    return printError('render: unknown subcommand: ' + sub);
+  };
+
+  window.PAGE_COMMANDS['render'].help = 'render <args>           ascii/color raytracer';
+})();
+</script>
