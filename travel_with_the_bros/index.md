@@ -45,14 +45,15 @@ Dates below are illustrative (assuming an early-September arrival) — shift the
 |---|---|---|---|---|---|
 | **0** | 28/08 | Naha | — | Arrive (~19h), pick up rental car at airport | Izakaya dinner, walk in Kokusai Dori |
 | **1** | 29/08 | Naha | Tsuboya pottery street + museum | Shuri Castle grounds + Kinjo Stone Road | Naminoue Beach sunset, casual dinner |
-| **2** | 30/08 | Naha | Makishi Public Market — browse and lunch upstairs | Fukushuen Garden, then a wander through Tomari Iyumachi Fish Market | Sakurazaka evening — bars, record shops, awamori tasting |
-| **3** | 31/08 | Naha → **Zamami** | *Early:* leave car parked in Naha → Tomari Port ferry to Zamami (~50 min) → check in | Furuzamami Beach — swim/snorkel | Quiet guesthouse dinner, island stargazing |
-| **4** | 01/09 |Zamami | Ama Beach — sea turtles | Free time: more reef, village wander, or SUP | Sunset from the port, dinner |
-| **5** | 02/09 |Zamami → **Aka** (day trip) | *Early:* Mitsushima inter-island ferry to Aka (~15 min, no reservation needed) | Nishibama Beach — swim/snorkel, walk across the bridge to Geruma (Kerama deer) | Ferry back to Zamami (last boats run into early evening), dinner at your same guesthouse |
-| **6** | 03/09 |Zamami → Naha → **Onna (West Coast)** | *Early:* ferry back to Naha (~50 min) → collect car | Drive to Onna (~1 hr), check in, settle | Cape Manzamo at golden hour (5 min from base), sunset dinner |
+| **2** | 30/08 | Naha → **Zamami** | *Early:* Tomari Port ferry to Zamami (~50 min) → check in | Furuzamami Beach — swim/snorkel | Quiet guesthouse dinner, island stargazing |
+| **3** | 31/08 |Zamami | Ama Beach — sea turtles | Free time: more reef, village wander, or SUP | Sunset from the port, dinner |
+| **4** | 01/09 |Zamami → **Aka** (day trip) | *Early:* Mitsushima inter-island ferry to Aka (~15 min, no reservation needed) | Nishibama Beach — swim/snorkel, walk across the bridge to Geruma (Kerama deer) | Ferry back to Zamami (last boats run into early evening), dinner at your same guesthouse |
+| **5** | 02/09 | Zamami | Boat snorkel trip to the outer reefs (book day before) | Free time / rest | Kaijo Tenboudai lookout at sunset, dinner |
+| **6** | 03/09 | Zamami → Naha→ **Onna** | Makishi Public Market / Yossele en call | Fukushuen Garden, then a wander through Tomari Iyumachi Fish Market, Drive to Onna (~1 hr), check in, settle | Cape Manzamo at golden hour (5 min from base), sunset dinner |
 | **7** | 04/09 |Onna | *Early:* Cape Maeda — Blue Cave snorkel (go early, before tour groups) | Drive north (~30–40 min) → Churaumi Aquarium | Relaxed dinner back at Onna |
 | **8** | 05/09 |Onna → **Naha** | Slow morning | Drive back to Naha (~1 hr), quick stop in Yomitan en route (pottery villages / Zakimi Castle) if time allows, park car for the last time | Final dinner — the special one you've been saving |
 | **9** | 06/09 |Naha | Slow morning, pack | Return car at airport, departure | — |
+
 
 **At a glance:** 3 nights Naha (city, history, food — now with room to breathe) → 3 nights Zamami + a day trip to Aka (the best swimming/snorkeling of the trip, now with a second, quieter island) → 2 nights Onna (Manzamo, Blue Cave, Churaumi compressed into one tight but complete day) → 1 night Naha (soft landing before departure).
 
@@ -64,10 +65,10 @@ Les super hotels qu'on veut reserver.
 
 | Day | Calendar | Hotel | Prix | Lien |
 |---|---|---|---|---|
-| **0** | 28/08 - 31/08 | Naha   | 6000 |[Relax Hotel (super cheap) ](https://www.agoda.com/9-10-4/hotel/okinawa-main-island-jp.html?countryId=0&finalPriceView=2&isShowMobileAppPrice=false&cid=1844104&numberOfBedrooms=&familyMode=false&adults=3&children=0&rooms=1&maxRooms=0&checkIn=2026-08-28&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=3&showReviewSubmissionEntry=false&currencyCode=JPY&isFreeOccSearch=false&tspTypes=2&los=2&searchrequestid=a0d14e60-b55c-4dd0-a5fc-886b4b84f06a&ds=F2Wm5pvPwgJ3qTgT)| 
-| **1** | 31/08 - 03/09 | Aka-island |  |[ Guest House AKIZATA ](https://www.booking.com/hotel/jp/guest-house-akizata-gesutohausu-akizata.fr.html?label=metatrivago-hotel-13389746_xqdz-def_los-3_nrm-1_gstadt-3_gstkid-0_curr-eur_lang-fr_mcid-50_ppt-B_dev-dsk_losb-3_bw-6_bwb-5_pg-0_dd-0_gsb-3_tstar-0_trat-0_tprc-0_tamnt-0_cod-1787638757_trvref-f1a7f1c0-c4f9-3c52-a6d7-1cd055723c1a&sid=7aa1e0c180530f8173b58f41720a2c88&utm_source=metatrivago&utm_medium=meta&utm_term=hotel-13389746&utm_content=los-3_nrm-1_gstadt-3_gstkid-0_curr-eur_lang-fr_mcid-50_ppt-B_dev-dsk_losb-3_bw-6_bwb-5_pg-0_dd-0_gsb-3_tstar-0_trat-0_tprc-0_tamnt-0_cod-1787638757_trvref-f1a7f1c0-c4f9-3c52-a6d7-1cd055723c1a&utm_campaign=fr&aid=340291&ucfs=1&checkin=2026-08-31&checkout=2026-09-03&dest_id=-249058&dest_type=city&group_adults=3&no_rooms=1&group_children=0&srpvid=fc7e2c73a9891157&srepoch=1787638806&all_sr_blocks=1338974605_441735256_3_0_0&highlighted_blocks=1338974605_441735256_3_0_0&matching_block_id=1338974605_441735256_3_0_0&atlas_src=sr_iw_title)| 
+| **0** | 28/08 - 30/08 | Naha   | 6000 |[Relax Hotel (super cheap) ](https://www.agoda.com/fr-fr/9-10-4/hotel/okinawa-main-island-jp.html)| 
+| **1** | 30/08 - 03/09 | Aka-island |  |[ Guest House AKIZATA ](https://www.booking.com/hotel/jp/guest-house-akizata-gesutohausu-akizata.fr.html?label=metatrivago-hotel-13389746_xqdz-def_los-3_nrm-1_gstadt-3_gstkid-0_curr-eur_lang-fr_mcid-50_ppt-B_dev-dsk_losb-3_bw-6_bwb-5_pg-0_dd-0_gsb-3_tstar-0_trat-0_tprc-0_tamnt-0_cod-1787638757_trvref-f1a7f1c0-c4f9-3c52-a6d7-1cd055723c1a&sid=7aa1e0c180530f8173b58f41720a2c88&utm_source=metatrivago&utm_medium=meta&utm_term=hotel-13389746&utm_content=los-3_nrm-1_gstadt-3_gstkid-0_curr-eur_lang-fr_mcid-50_ppt-B_dev-dsk_losb-3_bw-6_bwb-5_pg-0_dd-0_gsb-3_tstar-0_trat-0_tprc-0_tamnt-0_cod-1787638757_trvref-f1a7f1c0-c4f9-3c52-a6d7-1cd055723c1a&utm_campaign=fr&aid=340291&ucfs=1&checkin=2026-08-31&checkout=2026-09-03&dest_id=-249058&dest_type=city&group_adults=3&no_rooms=1&group_children=0&srpvid=fc7e2c73a9891157&srepoch=1787638806&all_sr_blocks=1338974605_441735256_3_0_0&highlighted_blocks=1338974605_441735256_3_0_0&matching_block_id=1338974605_441735256_3_0_0&atlas_src=sr_iw_title)| 
 | **2** | 03/09 - 05/09 | Onna   |  |[ None ]()| 
-| **3** | 03/09 - 05/09 | Naha   |  |[ None ]()| 
+| **3** | 05/09 - 06/09 | Naha   |  |[ None ]()| 
 
 ## 1. What September in Okinawa Actually Feels Like
 
