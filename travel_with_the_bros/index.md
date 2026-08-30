@@ -23,27 +23,19 @@ title: /travel_with_bros/Okinawa Trip
 
 # Okinawa — 9 jours, 3 étapes
 
-*Voyage au rythme doux et posé : moins de lieux, plus de temps dans chacun, de vrais quartiers, une bonne cuisine et la mer. Structure : Naha (2 nuits) → Zamami + Aka / îles Kerama (3 nuits) → Côte Ouest / Onna–Yomitan (2 nuits) → Naha (1 nuit).*
-
-**Note sur cette version :** deux changements par rapport au plan initial. D'abord, l'arrivée a été légèrement avancée et une seconde journée entière a été ajoutée à Naha avant le départ — 3 nuits sur place désormais au lieu de 2, ce qui donne un vrai souffle à l'étape urbaine. Ensuite, le séjour dans les Kerama a été prolongé de 2 à 3 nuits afin d'ajouter une journée sur l'île d'Aka, une voisine plus paisible de Zamami. Ce second changement est un arbitrage assumé — il se fait aux dépens d'une journée sur la côte ouest, ce qui compresse Manzamo, le cap Maeda, Churaumi et Yomitan dans un timing plus serré (mais tout à fait faisable) au lieu d'un rythme totalement détendu. Voir les sections 2 et 4 pour le détail de cette organisation.
-
-## Aperçu de l'itinéraire
-
-Naha sert d'ancrage aux deux extrémités du voyage — c'est la porte d'entrée aéroportuaire et le hub des ferrys. C'est donc là que vous atterrissez, d'où vous repartez, et le point de transit obligé entre les deux autres étapes. La boucle s'articule ainsi : Naha (installation, immersion urbaine) → ferry pour Zamami, avec une courte escapade sur Aka au passage → ferry retour via Naha → voiture le long de la côte ouest jusqu'à Onna → trajet retour vers Naha pour l'envol. Trois rythmes distincts en un seul voyage — ville, île, côte — sans aucun aller-retour superflu en dehors des deux passages inévitables par Naha.
+*Voyage au rythme doux et posé : moins de lieux, plus de temps dans chacun, de vrais quartiers, une bonne cuisine et la mer. Structure : Naha (2 nuits) → Aka + Zamami / îles Kerama (3 nuits) → Côte Ouest / Onna–Yomitan (2 nuits) → Naha (1 nuit).*
 
 ---
 
-## Planning synthétique
-
-Les dates ci-dessous sont données à titre indicatif (sur la base d'une arrivée début septembre) — adaptez-les à vos dates réelles. Les cases représentent des demi-journées ; lorsqu'une journée est découpée en plus de deux blocs (trajet + arrivée + activité), cela est directement précisé dans la case.
+## Planning 
 
 | Jour | Date | Étape | Matin | Après-midi | Soir |
 | --- | --- | --- | --- | --- | --- |
-| **0** | 28/08 | Naha | — | Arrivée (~19h), monorail vers notre superb chambre. | Dîner izakaya, superbe visio pour le U.|
+| **0** | 28/08 | Naha | — | Arrivée (~19h), monorail vers notre superbe chambre. | Dîner izakaya, superbe visio pour le U. qui mangera des nouilles comme un sale dans un parc.|
 | **1** | 29/08 | Naha | Rue des potiers de Tsuboya + musée | Domaine du château de Shuri + voie pavée de Kinjo | Coucher de soleil à la plage de Naminoue, dîner décontracté, boîte de nuit, rencontre avec Amine le sang. N. se bat. |
-| **2** | 30/08 | Naha → **Aka** | *Tôt :* Ferry depuis le port de Tomari vers Zamami + gueule de bois. Super bentō. | Plage de ... — baignade / snorkeling | Dîner paisible dans le food truck qui prend son temps. Mais C ok pck C les îles. |
+| **2** | 30/08 | Naha → **Aka** | *Tôt :* Ferry depuis le port de Tomari vers Zamami + gueule de bois. Super bentō. | Plage de Nishihama — baignade / snorkeling + Coups de soleil. | Dîner paisible dans le food truck qui prend son temps. Mais C ok pck C les îles. Yossele se fait scam par son dîner. |
 | **3** | 31/08 | Aka | balade vélo bas de l'île | Temps libre : récif, flânerie dans le village  | Coucher de soleil depuis le port, dîner, bisous entre bros. |
-| **4** | 01/09 | Aka → **Zamami** (excursion) | *Tôt :* Navette inter-îles Mitsushima vers Z.  (~15 min, sans réservation) | Plage de Nishibama — baignade / snorkeling, traversée du pont vers Geruma (cerfs des Kerama) | Ferry retour vers Aka (derniers départs en début de soirée), dîner à votre maison d'hôtes |
+| **4** | 01/09 | Aka → **Zamami** (excursion) | *Tôt :* Navette inter-îles Mitsushima vers Z.  (~15 min, sans réservation) | Plage de Furuzamami / Ama — baignade / snorkeling, Belvédère Kaijo Tenboudai pt  | Ferry retour vers Aka (derniers départs en début de soirée), dîner à votre maison d'hôtes |
 | **5** | 02/09 | Aka | Sortie snorkeling en bateau vers les récifs extérieurs (à réserver la veille) | Temps libre / repos | Belvédère Kaijo Tenboudai au coucher du soleil, dîner |
 | **6** | 03/09 | Aka → Naha → **Onna** | Marché public de Makishi / pause gourmande | Jardin Fukushuen, puis balade au marché aux poissons de Tomari Iyumachi. Trajet vers Onna (~1h), enregistrement, installation | Cap Manzamo à l'heure dorée (à 5 min de la base), dîner au coucher du soleil |
 | **7** | 04/09 | Onna | *Tôt :* Cap Maeda — snorkeling à la Grotte Bleue (y aller tôt, avant les groupes) | Route vers le nord (~30–40 min) → Aquarium Churaumi | Dîner relaxant de retour à Onna |
@@ -52,7 +44,6 @@ Les dates ci-dessous sont données à titre indicatif (sur la base d'une arrivé
 
 **En un coup d'œil :** 3 nuits à Naha (ville, histoire, gastronomie — avec désormais du temps pour respirer) → 3 nuits à Zamami + une journée d'excursion à Aka (les plus belles baignades et spots de snorkeling du séjour, agrémentés d'une seconde île plus sauvage) → 2 nuits à Onna (Manzamo, la Grotte Bleue et Churaumi regroupés sur une journée dense mais complète) → 1 nuit à Naha (retour en douceur avant le vol).
 
-**Ce qui a été sacrifié :** l'étape sur la côte ouest perd sa marge de manœuvre — la forêt de Yanbaru et une vraie flânerie sans hâte à Yomitan n'ont plus de demi-journée dédiée ; Yomitan devient une simple halte sur le trajet retour. Si Yomitan s'avère être un coup de cœur une fois sur place, il sera facile de raccourcir la visite de Churaumi pour libérer du temps, l'aquarium lui-même ne nécessitant que 1h30 à 2h pour être bien visité. La journée supplémentaire à Naha n'a rien coûté par ailleurs — elle provient d'une arrivée plus précoce et non du raccourcissement d'une autre étape.
 ---
 
 ## 0.1 Hôtels
@@ -81,11 +72,9 @@ Les super hôtels qu'on veut réserver.
 
 **Fréquentation :** C'est l'un des meilleurs mois pour cela — les vacances scolaires d'été japonaises se terminent fin août, donc la foule locale diminue juste au moment où vous arrivez, tandis que l'eau est encore à sa température maximale.
 
-**Événements saisonniers :** Pas de grand festival lors de la première semaine de septembre (Eisa/Obon a lieu de mi-août à fin août ; le tir à la corde de Naha a lieu en octobre). Attendez-vous à une vraie vie locale plutôt qu'à des foules de festivaliers.
-
 ---
 
-**Ce qu'il faut emporter, compte tenu de ce qui précède :**
+**Ce qu'il faut emporter:**
 
 * Crème solaire respectueuse des récifs (la crème solaire classique est souvent restreinte ou déconseillée près des récifs à Zamami/Aka)
 * Un vêtement de pluie léger et à séchage rapide — pour les averses soudaines, pas seulement pour les jours de typhon
@@ -170,7 +159,7 @@ Pas besoin de voiture pour ces deux périodes — voici comment se déplacer :
 * **Boutiques de souvenirs de Kokusai Dori** (la partie très touristique) : Produits fabriqués en série, trop chers. Achetez plutôt vos poteries et artisanats à Tsuboya ou Yomitan.
 * **Excursions organisées en bus vers le nord :** Pratiques mais au pas de course — 30 à 45 minutes par arrêt selon l'emploi du temps d'un autre. Comme vous avez déjà une voiture pour cette étape, aucune raison d'en prendre une.
 * **Bâtiment principal du château de Shuri — gérez vos attentes, mais ne zappez pas :** Le Seiden (bâtiment principal) est toujours en cours de reconstruction active, avec une fin des travaux prévue pour novembre 2026, vous ne verrez donc pas l'intérieur d'un palais terminé. Les jardins, les portes historiques, les terrasses panoramiques et la plateforme d'observation du chantier valent vraiment le coup — allez-y pour l'histoire et la vue sur Naha, pas pour un palais complet. Zone intérieure payante ~400 ¥.
-
+* **Epica :** Beaucoup de bruit pour pas grand chose. Beaucoup (20) de Marines américains et de policier japonais pour gérer un mec trop bourré.
 ---
 
 ## 7. Restaurants, Cafés, Bars
@@ -226,12 +215,3 @@ Comme le séjour comprend 3 étapes, les solutions de secours varient légèreme
 * **Sur la côte ouest :** L'aquarium du parc Ocean Expo et le Tropical Dream Center sont des options couvertes/en intérieur ; Yomitan propose également des ateliers intérieurs de poterie et de soufflage de verre si les balades côtières sont sous la pluie. Avoir déjà la voiture avec vous facilite le passage à un programme en intérieur, peu importe le jour où la météo tourne.
 
 ---
-
-**Dernières notes pratiques :**
-
-* Réservez le ferry pour Zamami et la maison d'hôtes ensemble, et choisissez des options avec annulation flexible en raison du risque de typhon en septembre.
-* La navette inter-îles pour Aka n'a pas besoin d'être réservée à l'avance, vous pourrez donc décider le jour même en fonction de la météo et de votre énergie — pas besoin de la bloquer avant d'arriver.
-* Récupérez la voiture de location à Naha le Jour 6, juste après le ferry retour de Zamami — inutile de l'organiser avant.
-* Réservez votre dîner spécial okinawaïen avec musique en direct à Naha pour le Jour 8, une fois que vous saurez que votre programme s'est déroulé comme prévu.
-* Emportez des espèces, de la crème solaire respectueuse des récifs et un vêtement de pluie léger tous les jours, même si le ciel est dégagé.
-* Voyagez léger pour l'étape à Zamami — vous apprécierez d'avoir un trajet à pied facile entre le ferry et votre maison d'hôtes.
