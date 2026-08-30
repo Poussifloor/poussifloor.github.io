@@ -21,215 +21,217 @@ title: /travel_with_bros/Okinawa Trip
   em { color: #55606a; }
 </style>
 
+# Okinawa — 9 jours, 3 étapes
 
+*Voyage au rythme doux et posé : moins de lieux, plus de temps dans chacun, de vrais quartiers, une bonne cuisine et la mer. Structure : Naha (2 nuits) → Zamami + Aka / îles Kerama (3 nuits) → Côte Ouest / Onna–Yomitan (2 nuits) → Naha (1 nuit).*
 
-# Okinawa — 9 Days, 3 Bases
+**Note sur cette version :** deux changements par rapport au plan initial. D'abord, l'arrivée a été légèrement avancée et une seconde journée entière a été ajoutée à Naha avant le départ — 3 nuits sur place désormais au lieu de 2, ce qui donne un vrai souffle à l'étape urbaine. Ensuite, le séjour dans les Kerama a été prolongé de 2 à 3 nuits afin d'ajouter une journée sur l'île d'Aka, une voisine plus paisible de Zamami. Ce second changement est un arbitrage assumé — il se fait aux dépens d'une journée sur la côte ouest, ce qui compresse Manzamo, le cap Maeda, Churaumi et Yomitan dans un timing plus serré (mais tout à fait faisable) au lieu d'un rythme totalement détendu. Voir les sections 2 et 4 pour le détail de cette organisation.
 
-*Relaxed, slow-travel style: fewer places, more time in each, real neighborhoods, good food, and the sea. Structure: Naha (2 nights) → Zamami + Aka / Kerama Islands (3 nights) → West Coast / Onna–Yomitan (2 nights) → Naha (1 night).*
+## Aperçu de l'itinéraire
 
-**Note on this version:** two changes from the original plan. First, arrival was moved a bit earlier and a second full day was added in Naha before heading out — 3 nights there now instead of 2, giving the city leg real breathing room. Second, the Kerama stay was extended from 2 to 3 nights to add a day on Aka Island, a quieter neighbor of Zamami. That second change is a deliberate trade-off — it comes at the cost of one day on the west coast, which now compresses Manzamo, Cape Maeda, Churaumi, and Yomitan into a tighter (but still doable) stretch instead of a fully relaxed one. See sections 2 and 4 for how that compression works.
-
-
-## Route Overview
-
-Naha anchors both ends of the trip — it's the airport and the ferry hub, so it's where you land, where you leave from, and the pass-through point between the other two bases. The loop runs: Naha (settle in, city time) → ferry out to Zamami, with a short inter-island hop to Aka along the way → ferry back through Naha → car up the west coast to Onna → drive back to Naha to fly out. Three distinct paces in one trip — city, island, coast — with no backtracking beyond the two unavoidable returns through Naha.
-
+Naha sert d'ancrage aux deux extrémités du voyage — c'est la porte d'entrée aéroportuaire et le hub des ferrys. C'est donc là que vous atterrissez, d'où vous repartez, et le point de transit obligé entre les deux autres étapes. La boucle s'articule ainsi : Naha (installation, immersion urbaine) → ferry pour Zamami, avec une courte escapade sur Aka au passage → ferry retour via Naha → voiture le long de la côte ouest jusqu'à Onna → trajet retour vers Naha pour l'envol. Trois rythmes distincts en un seul voyage — ville, île, côte — sans aucun aller-retour superflu en dehors des deux passages inévitables par Naha.
 
 ---
 
-## Quick Schedule
+## Planning synthétique
 
-Dates below are illustrative (assuming an early-September arrival) — shift them to your actual travel dates. Cells show half-day blocks; where a day is split into more than two real chunks (travel + arrival + activity), that's noted directly in the cell.
+Les dates ci-dessous sont données à titre indicatif (sur la base d'une arrivée début septembre) — adaptez-les à vos dates réelles. Les cases représentent des demi-journées ; lorsqu'une journée est découpée en plus de deux blocs (trajet + arrivée + activité), cela est directement précisé dans la case.
 
-| Day | Calendar | Base | Morning | Afternoon | Evening |
-|---|---|---|---|---|---|
-| **0** | 28/08 | Naha | — | Arrive (~19h), pick up rental car at airport | Izakaya dinner, walk in Kokusai Dori |
-| **1** | 29/08 | Naha | Tsuboya pottery street + museum | Shuri Castle grounds + Kinjo Stone Road | Naminoue Beach sunset, casual dinner |
-| **2** | 30/08 | Naha → **Zamami** | *Early:* Tomari Port ferry to Zamami (~50 min) → check in | Furuzamami Beach — swim/snorkel | Quiet guesthouse dinner, island stargazing |
-| **3** | 31/08 |Zamami | Ama Beach — sea turtles | Free time: more reef, village wander, or SUP | Sunset from the port, dinner |
-| **4** | 01/09 |Zamami → **Aka** (day trip) | *Early:* Mitsushima inter-island ferry to Aka (~15 min, no reservation needed) | Nishibama Beach — swim/snorkel, walk across the bridge to Geruma (Kerama deer) | Ferry back to Zamami (last boats run into early evening), dinner at your same guesthouse |
-| **5** | 02/09 | Zamami | Boat snorkel trip to the outer reefs (book day before) | Free time / rest | Kaijo Tenboudai lookout at sunset, dinner |
-| **6** | 03/09 | Zamami → Naha→ **Onna** | Makishi Public Market / Yossele en call | Fukushuen Garden, then a wander through Tomari Iyumachi Fish Market, Drive to Onna (~1 hr), check in, settle | Cape Manzamo at golden hour (5 min from base), sunset dinner |
-| **7** | 04/09 |Onna | *Early:* Cape Maeda — Blue Cave snorkel (go early, before tour groups) | Drive north (~30–40 min) → Churaumi Aquarium | Relaxed dinner back at Onna |
-| **8** | 05/09 |Onna → **Naha** | Slow morning | Drive back to Naha (~1 hr), quick stop in Yomitan en route (pottery villages / Zakimi Castle) if time allows, park car for the last time | Final dinner — the special one you've been saving |
-| **9** | 06/09 |Naha | Slow morning, pack | Return car at airport, departure | — |
+| Jour | Date | Étape | Matin | Après-midi | Soir |
+| --- | --- | --- | --- | --- | --- |
+| **0** | 28/08 | Naha | — | Arrivée (~19h), monorail vers notre superb chambre. | Dîner izakaya, superbe visio pour le U.|
+| **1** | 29/08 | Naha | Rue des potiers de Tsuboya + musée | Domaine du château de Shuri + voie pavée de Kinjo | Coucher de soleil à la plage de Naminoue, dîner décontracté, boîte de nuit, rencontre avec Amine le sang. N. se bat. |
+| **2** | 30/08 | Naha → **Aka** | *Tôt :* Ferry depuis le port de Tomari vers Zamami + gueule de bois. Super bentō. | Plage de ... — baignade / snorkeling | Dîner paisible dans le food truck qui prend son temps. Mais C ok pck C les îles. |
+| **3** | 31/08 | Aka | balade vélo bas de l'île | Temps libre : récif, flânerie dans le village  | Coucher de soleil depuis le port, dîner, bisous entre bros. |
+| **4** | 01/09 | Aka → **Zamami** (excursion) | *Tôt :* Navette inter-îles Mitsushima vers Z.  (~15 min, sans réservation) | Plage de Nishibama — baignade / snorkeling, traversée du pont vers Geruma (cerfs des Kerama) | Ferry retour vers Aka (derniers départs en début de soirée), dîner à votre maison d'hôtes |
+| **5** | 02/09 | Aka | Sortie snorkeling en bateau vers les récifs extérieurs (à réserver la veille) | Temps libre / repos | Belvédère Kaijo Tenboudai au coucher du soleil, dîner |
+| **6** | 03/09 | Aka → Naha → **Onna** | Marché public de Makishi / pause gourmande | Jardin Fukushuen, puis balade au marché aux poissons de Tomari Iyumachi. Trajet vers Onna (~1h), enregistrement, installation | Cap Manzamo à l'heure dorée (à 5 min de la base), dîner au coucher du soleil |
+| **7** | 04/09 | Onna | *Tôt :* Cap Maeda — snorkeling à la Grotte Bleue (y aller tôt, avant les groupes) | Route vers le nord (~30–40 min) → Aquarium Churaumi | Dîner relaxant de retour à Onna |
+| **8** | 05/09 | Onna → **Naha** | Matinée en douceur | Trajet retour vers Naha (~1h), courte halte à Yomitan en chemin (villages de potiers / château de Zakimi) si le temps le permet, restitution définitive de la voiture | Dîner de fin de séjour — la belle table gardée pour l'occasion |
+| **9** | 06/09 | Naha | Matinée tranquille, bagages | Restitution de la voiture à l'aéroport, départ | — |
 
+**En un coup d'œil :** 3 nuits à Naha (ville, histoire, gastronomie — avec désormais du temps pour respirer) → 3 nuits à Zamami + une journée d'excursion à Aka (les plus belles baignades et spots de snorkeling du séjour, agrémentés d'une seconde île plus sauvage) → 2 nuits à Onna (Manzamo, la Grotte Bleue et Churaumi regroupés sur une journée dense mais complète) → 1 nuit à Naha (retour en douceur avant le vol).
 
-**At a glance:** 3 nights Naha (city, history, food — now with room to breathe) → 3 nights Zamami + a day trip to Aka (the best swimming/snorkeling of the trip, now with a second, quieter island) → 2 nights Onna (Manzamo, Blue Cave, Churaumi compressed into one tight but complete day) → 1 night Naha (soft landing before departure).
-
-**What got sacrificed:** the west-coast leg loses its slack — Yanbaru's forest and a proper, unhurried Yomitan wander no longer get a dedicated half-day; Yomitan becomes a quick stop on the drive back instead. If Yomitan turns out to be a highlight once you're there, it's easy to trim the Churaumi visit shorter to free up time, since the aquarium itself only needs 1.5–2 hours to see well. Naha's extra day didn't cost anything elsewhere — it came from an earlier arrival, not from trimming another base.
-
----
-## 0.1 Hotels
-Les super hotels qu'on veut reserver.
-
-| Day | Calendar | Hotel | Prix | Lien |
-|---|---|---|---|---|
-| **0** | 28/08 - 30/08 | Naha   | 6000 |[Relax Hotel (super cheap) ](https://www.agoda.com/fr-fr/9-10-4/hotel/okinawa-main-island-jp.html)| 
-| **1** | 30/08 - 03/09 | Aka-island |  |[ Guest House AKIZATA ](https://www.booking.com/hotel/jp/guest-house-akizata-gesutohausu-akizata.fr.html?label=metatrivago-hotel-13389746_xqdz-def_los-3_nrm-1_gstadt-3_gstkid-0_curr-eur_lang-fr_mcid-50_ppt-B_dev-dsk_losb-3_bw-6_bwb-5_pg-0_dd-0_gsb-3_tstar-0_trat-0_tprc-0_tamnt-0_cod-1787638757_trvref-f1a7f1c0-c4f9-3c52-a6d7-1cd055723c1a&sid=7aa1e0c180530f8173b58f41720a2c88&utm_source=metatrivago&utm_medium=meta&utm_term=hotel-13389746&utm_content=los-3_nrm-1_gstadt-3_gstkid-0_curr-eur_lang-fr_mcid-50_ppt-B_dev-dsk_losb-3_bw-6_bwb-5_pg-0_dd-0_gsb-3_tstar-0_trat-0_tprc-0_tamnt-0_cod-1787638757_trvref-f1a7f1c0-c4f9-3c52-a6d7-1cd055723c1a&utm_campaign=fr&aid=340291&ucfs=1&checkin=2026-08-31&checkout=2026-09-03&dest_id=-249058&dest_type=city&group_adults=3&no_rooms=1&group_children=0&srpvid=fc7e2c73a9891157&srepoch=1787638806&all_sr_blocks=1338974605_441735256_3_0_0&highlighted_blocks=1338974605_441735256_3_0_0&matching_block_id=1338974605_441735256_3_0_0&atlas_src=sr_iw_title)| 
-| **2** | 03/09 - 05/09 | Onna   |  |[ None ]()| 
-| **3** | 05/09 - 06/09 | Naha   |  |[ None ]()| 
-
-## 1. What September in Okinawa Actually Feels Like
-
-**Weather:** Hot and humid — 30–31°C days, 26°C nights, sea a bath-warm 28–29°C. Still full summer; the cooler, drier season doesn't start until late September/October.
-
-**Typhoons:** September is peak typhoon month. A storm isn't guaranteed, but the odds of at least one affecting your trip are real, and September's systems tend to be fewer but bigger and wetter than August's. Most trips still see mostly good weather with one or two rough days — but build in slack, especially around ferries.
-
-**Biggest risk in this plan: the ferries.** Three boat legs total — Naha↔Zamami (twice) and the short Zamami↔Aka hop. Ferries are the first thing cancelled in rough seas. The Zamami↔Aka leg is short and frequent, so least likely to strand you; if it does get cancelled, just spend the extra day on Zamami instead.
-- Book **flexible/refundable** lodging for the Zamami nights and get **travel insurance** covering weather disruption.
-- If a typhoon warning hits while on Zamami, guesthouses are used to it — they'll help you catch an earlier boat or you simply wait it out.
-- Keep the West Coast check-in flexible rather than a non-refundable first night.
-- Carry ¥20,000+ in cash — card payments and small guesthouses/restaurants can be unreliable in outages.
-
-**Crowds:** One of the better months for this — Japanese school summer holidays end in late August, so domestic crowds thin out right as you arrive, while the water's still at peak warmth.
-
-**Seasonal events:** No major festival in the first week of September (Eisa/Obon is mid-to-late August; the Naha Tug-of-War is October). Expect real local life rather than festival crowds.
-
+**Ce qui a été sacrifié :** l'étape sur la côte ouest perd sa marge de manœuvre — la forêt de Yanbaru et une vraie flânerie sans hâte à Yomitan n'ont plus de demi-journée dédiée ; Yomitan devient une simple halte sur le trajet retour. Si Yomitan s'avère être un coup de cœur une fois sur place, il sera facile de raccourcir la visite de Churaumi pour libérer du temps, l'aquarium lui-même ne nécessitant que 1h30 à 2h pour être bien visité. La journée supplémentaire à Naha n'a rien coûté par ailleurs — elle provient d'une arrivée plus précoce et non du raccourcissement d'une autre étape.
 ---
 
-**What to pack, given the above:**
-- Reef-safe sunscreen (regular sunscreen is often restricted or discouraged near reefs at Zamami/Aka)
-- Light, quick-dry rain layer — for sudden showers, not just typhoon days
-- Swimwear you're happy to wear multiple days running, plus a quick-dry towel
-- Water shoes or sandals with grip, for rocky entries at Furuzamami/Nishibama/Cape Maeda
-- A dry bag or ziplock for phone/wallet on ferry days and beach days
-- Cash (¥20,000+), since Zamami/Aka are cash-heavy and outages happen
-- A light long layer for aquarium/indoor AC, which runs cold against the outdoor heat
-- Basic motion-sickness tablets if you're at all prone to it — the Naha↔Zamami and Zamami↔Aka crossings can get choppy in a swell
-- Portable phone charger — useful on ferry/travel days with patchy outlet access
+## 0.1 Hôtels
+
+Les super hôtels qu'on veut réserver.
+
+| Jour | Date | Hôtel | Prix | Lien |
+| --- | --- | --- | --- | --- |
+| **0** | 28/08 - 30/08 | Naha | 6000 | [Relax Hotel (super cheap) ](https://www.agoda.com/fr-fr/9-10-4/hotel/okinawa-main-island-jp.html) |
+| **1** | 30/08 - 03/09 | Île d'Aka |  | [ Guest House AKIZATA ](https://www.booking.com/hotel/jp/guest-house-akizata-gesutohausu-akizata.fr.html?label=metatrivago-hotel-13389746_xqdz-def_los-3_nrm-1_gstadt-3_gstkid-0_curr-eur_lang-fr_mcid-50_ppt-B_dev-dsk_losb-3_bw-6_bwb-5_pg-0_dd-0_gsb-3_tstar-0_trat-0_tprc-0_tamnt-0_cod-1787638757_trvref-f1a7f1c0-c4f9-3c52-a6d7-1cd055723c1a&sid=7aa1e0c180530f8173b58f41720a2c88&utm_source=metatrivago&utm_medium=meta&utm_term=hotel-13389746&utm_content=los-3_nrm-1_gstadt-3_gstkid-0_curr-eur_lang-fr_mcid-50_ppt-B_dev-dsk_losb-3_bw-6_bwb-5_pg-0_dd-0_gsb-3_tstar-0_trat-0_tprc-0_tamnt-0_cod-1787638757_trvref-f1a7f1c0-c4f9-3c52-a6d7-1cd055723c1a&utm_campaign=fr&aid=340291&ucfs=1&checkin=2026-08-31&checkout=2026-09-03&dest_id=-249058&dest_type=city&group_adults=3&no_rooms=1&group_children=0&srpvid=fc7e2c73a9891157&srepoch=1787638806&all_sr_blocks=1338974605_441735256_3_0_0&highlighted_blocks=1338974605_441735256_3_0_0&matching_block_id=1338974605_441735256_3_0_0&atlas_src=sr_iw_title) |
+| **2** | 03/09 - 05/09 | Onna |  | [ Aucun ](https://www.google.com/search?q=) |
+| **3** | 05/09 - 06/09 | Naha |  | [ Aucun ](https://www.google.com/search?q=) |
+
+## 1. Ce à quoi ressemble vraiment le mois de septembre à Okinawa
+
+**Météo :** Chaude et humide — 30–31°C la journée, 26°C la nuit, une mer aussi chaude qu'un bain à 28–29°C. C'est encore le plein été ; la saison plus fraîche et plus sèche ne commence qu'à la fin septembre/octobre.
+
+**Typhons :** Septembre est le mois le plus propice aux typhons. Une tempête n'est pas garantie, mais la probabilité qu'au moins une affecte votre voyage est réelle, et les phénomènes de septembre ont tendance à être moins nombreux mais plus importants et plus pluvieux que ceux d'août. La plupart des voyages bénéficient toujours d'un temps généralement beau avec un ou deux jours de gros temps — mais prévoyez de la marge, en particulier pour les ferrys.
+
+**Le plus grand risque de ce plan : les ferrys.** Trois trajets en bateau au total — Naha↔Zamami (deux fois) et la courte traversée Zamami↔Aka. Les ferrys sont les premiers annulés en cas de mer agitée. La liaison Zamami↔Aka est courte et fréquente, donc moins susceptible de vous bloquer ; si elle est annulée, passez simplement la journée supplémentaire sur Zamami à la place.
+
+* Réservez des hébergements **flexibles/remboursables** pour les nuits à Zamami et souscrivez une **assurance voyage** couvrant les perturbations météo.
+* Si une alerte au typhon survient pendant que vous êtes sur Zamami, les maisons d'hôtes en ont l'habitude — elles vous aideront à prendre un bateau plus tôt ou vous attendrez simplement que ça passe.
+* Gardez l'enregistrement sur la côte ouest flexible plutôt qu'une première nuit non remboursable.
+* Emportez 20 000 ¥ ou plus en espèces — les paiements par carte et les petites maisons d'hôtes/restaurants peuvent être peu fiables en cas de coupure de courant.
+
+**Fréquentation :** C'est l'un des meilleurs mois pour cela — les vacances scolaires d'été japonaises se terminent fin août, donc la foule locale diminue juste au moment où vous arrivez, tandis que l'eau est encore à sa température maximale.
+
+**Événements saisonniers :** Pas de grand festival lors de la première semaine de septembre (Eisa/Obon a lieu de mi-août à fin août ; le tir à la corde de Naha a lieu en octobre). Attendez-vous à une vraie vie locale plutôt qu'à des foules de festivaliers.
 
 ---
 
-## 2. Car Rental Logic (Picked Up After the Islands)
+**Ce qu'il faut emporter, compte tenu de ce qui précède :**
 
-You'll rent a car only for the second half of the trip — pick it up in Naha on **Day 6**, right after the ferry back from Zamami, and return it in Naha on **Day 9** before your flight. No car for the first week; you don't need one.
-
-- **Naha (Days 1–2) and Zamami + Aka (Days 3–5):** No rental car at all — nothing to park, nothing to arrange. See the new transportation section below for how to get around during this stretch.
-- **Picking up (Day 6):** Collect the car in Naha right off the ferry from Zamami, then drive straight to Onna (~1 hr) — no need to double back into the city center first.
-- **Onna/Yomitan (Days 6–7):** This is where the car earns its keep — spread-out resort coastline with poor bus frequency. Manzamo, Cape Maeda, Yomitan's pottery villages, and Churaumi all become easy, relaxed drives instead of a logistics puzzle.
-- **Naha (Days 8–9):** Same logic as before — don't bother driving it around the city. Park it once back at your hotel (or a paid lot) and return it at the airport on Day 9.
-
-**Practical notes:** Reserve ahead for September — availability tightens in typhoon season. Okinawa drives on the left. The Okinawa Expressway toll from central Okinawa up toward Nago (~¥500–1,000) is worth it to save real time on Day 7's Churaumi run. Rental period is now only about 4 days (Day 6–9) instead of the whole trip — cheaper, and no need to arrange multi-day parking during the island leg.
-
----
-
-## Transportation in Naha (Days 1–2, 8–9) and the Islands (Days 3–5)
-
-No car needed for either stretch — here's how to get around:
-
-**Naha:**
-- **Yui Rail monorail** — covers the main spine of the city (airport, Kencho-mae, Asahibashi/Tomari, up to Shuri). A day pass (~¥800) is worth it if you're moving around more than twice; single rides run ¥230–370.
-- **Walking** — Kokusai Dori, Tsuboya, Sakurazaka, and Naminoue Beach are all within a 15–20 min walk of each other or one monorail stop apart.
-- **Taxis** — cheap and plentiful for short hops (Tomari Port, Makishi Market, late-night returns); most rides within the city run ¥700–1,200.
-- **Buses** — extensive but not tourist-friendly (Japanese-only signage, exact-change complexity); skip unless a specific route saves real time.
-
-**Zamami + Aka:**
-- **On foot or bicycle** — both islands are small enough to cover entirely without wheels. Guesthouses typically rent bicycles for a few hundred yen a day.
-- **Inter-island ferry (Zamami↔Aka)** — the only "transit" you'll need, ~15 min, no reservation.
-- **Village taxis/shared vans** — a few exist on Zamami for longer hauls (e.g., to farther beaches), but at this scale you're unlikely to need one.
+* Crème solaire respectueuse des récifs (la crème solaire classique est souvent restreinte ou déconseillée près des récifs à Zamami/Aka)
+* Un vêtement de pluie léger et à séchage rapide — pour les averses soudaines, pas seulement pour les jours de typhon
+* Des maillots de bain que vous êtes content de porter plusieurs jours d'affilée, plus une serviette à séchage rapide
+* Des chaussures d'eau ou des sandales avec de l'accroche, pour les accès rocheux à Furuzamami/Nishibama/Cap Maeda
+* Un sac étanche ou un sac hermétique pour téléphone/portefeuille les jours de ferry et de plage
+* Des espèces (20 000 ¥+), car Zamami/Aka fonctionnent beaucoup au comptant et des coupures peuvent survenir
+* Une couche légère à manches longues pour l'aquarium et la climatisation intérieure, souvent très fraîche par rapport à la chaleur extérieure
+* Des comprimés contre le mal des transports si vous y êtes sujet — les traversées Naha↔Zamami et Zamami↔Aka peuvent être secouées par la houle
+* Une batterie externe pour téléphone — utile les jours de ferry/trajet avec un accès limité aux prises
 
 ---
 
-## 3. Best Beaches — Swimming & Snorkeling
+## 2. Logique de location de voiture (récupérée après les îles)
 
-| Beach | Base / Access | Why go | Notes |
-|---|---|---|---|
-| **Naminoue Beach** (Naha) | Walk/monorail — 12–15 min from Kencho-mae or Asahibashi | The only swimmable beach *inside* Naha — small, clean, calm, netted, with a dramatic shrine on the cliff above. Free. | Good for a quick dip or sunset, not for real snorkeling. Don't expect resort-beach beauty — it's a city beach with a highway overpass in front, which is part of its odd charm. |
-| **Furuzamami Beach** (Zamami) | 10–15 min walk/bike from Zamami port | The best easy snorkeling in the whole trip — shallow coral starts a few meters from the sand, no boat needed. | This is your headline swimming day — spend hours here, not a rushed visit. |
-| **Ama Beach** (Zamami) | ~10 min walk from port | Reliable sea-turtle sightings right from shore at the right tide. | Ask your guesthouse host about the best tide window while you're there. |
-| **Nishibama Beach** (Aka) | Inter-island ferry from Zamami (~15 min) | A striking 1km stretch of sand with excellent shallow-water snorkeling and views toward Geruma and Tokashiki — quieter and more local-feeling than Zamami's beaches. | Bring your own snorkel gear or rent locally; facilities are more basic than Furuzamami. |
-| **Cape Maeda / Blue Cave** (Onna) | Car — ~40–50 min from Onna base | Dramatic underwater topography, good visibility, famous cave swim-through. Rocky cape, not a sand beach. | Popular with dive shops — go early (before 9am) to beat the tour-group crowds. |
-| **Manza / other Onna resort beaches** | Car, or on foot if your hotel fronts one | Wide, groomed, classic turquoise-water Okinawa beaches, calm and family-friendly. | Convenient rather than special — fine for a lazy hour, not a must-seek destination. |
+Vous ne louerez une voiture que pour la seconde moitié du voyage — vous la récupérerez à Naha le **Jour 6**, juste après le ferry retour de Zamami, et la rendrez à Naha le **Jour 9** avant votre vol. Pas de voiture pour la première semaine ; vous n'en avez pas besoin.
 
-**Bottom line:** Naminoue for convenience, Furuzamami/Ama for the real experience, Cape Maeda for a second serious snorkel if you want variety on the west coast.
+* **Naha (Jours 1–2) et Zamami + Aka (Jours 3–5) :** Aucune voiture de location — rien à garer, rien à organiser. Consultez la nouvelle section sur les transports ci-dessous pour savoir comment vous déplacer pendant cette période.
+* **Prise en main (Jour 6) :** Récupérez la voiture à Naha dès la sortie du ferry de Zamami, puis roulez directement jusqu'à Onna (~1 h) — pas besoin de repasser par le centre-ville.
+* **Onna/Yomitan (Jours 6–7) :** C'est là que la voiture prend tout son sens — un littoral balnéaire étendu avec une faible fréquence de bus. Manzamo, le cap Maeda, les villages de potiers de Yomitan et Churaumi deviennent tous des trajets faciles et détendus au lieu d'un casse-tête logistique.
+* **Naha (Jours 8–9) :** Même logique qu'au début — ne vous embêtez pas à conduire en ville. Garez-la une fois de retour à votre hôtel (ou sur un parking payant) et rendrez-la à l'aéroport le Jour 9.
 
+**Notes pratiques :** Réservez à l'avance pour septembre — la disponibilité se tend pendant la saison des typhons. On conduit à gauche à Okinawa. Le péage de l'autoroute d'Okinawa depuis le centre d'Okinawa vers Nago (~500–1 000 ¥) vaut la peine pour gagner un temps précieux lors de la journée à Churaumi (Jour 7). La durée de location n'est plus que d'environ 4 jours (du Jour 6 au Jour 9) au lieu de tout le voyage — c'est moins cher, et pas besoin d'organiser un stationnement sur plusieurs jours pendant l'étape sur les îles.
 
 ---
 
-## 5. Neighborhoods & Hidden Gems
+## Transports à Naha (Jours 1–2, 8–9) et dans les îles (Jours 3–5)
 
-**Naha:**
-- **Tsuboya (pottery district):** Yachimun-dori's cobbled pottery street is quieter and more atmospheric than Kokusai Dori. Tsuboya Pottery Museum, ¥350, closed Mondays, ~30 minutes.
-- **Sakurazaka:** Uphill from Kokusai Dori — a small art-house cinema anchors record shops, vinyl bars, and low-key izakaya most guidebooks skip.
-- **Kinjo Stone Road (Shuri):** A short, beautifully preserved Ryukyu-era stone lane near Shuri Castle — quiet, shaded, old red-tile houses.
-- **Fukushuen Garden:** Free Chinese-style garden near Naminoue, often overlooked — 30–45 minutes of calm.
-- **Tomari Iyumachi Fish Market:** Working fishing-port market, less touristy than Makishi, great for very fresh sashimi.
+Pas besoin de voiture pour ces deux périodes — voici comment se déplacer :
 
-**Zamami:** The village itself is the hidden gem — a short, peaceful walk of traditional houses and a genuinely slow pace once the day-trip ferries leave. Ask locally about renting a bicycle for the day; the whole island is small enough to circle at a leisurely pace.
+**Naha :**
 
-**Aka:** Noticeably quieter and more local than Zamami, with far fewer visitors. Beyond Nishibama Beach, walk across the bridge to Geruma — keep an eye out for the protected wild Kerama deer that wander the island. There's also a small local legend worth asking about: the statue of a dog at the port, tied to a well-known Okinawan love story between two dogs on different islands.
+* **Monorail Yui Rail** — couvre l'axe principal de la ville (aéroport, Kencho-mae, Asahibashi/Tomari, jusqu'à Shuri). Un pass journée (~800 ¥) est rentable si vous vous déplacez plus de deux fois ; les trajets simples coûtent entre 230 et 370 ¥.
+* **À pied** — Kokusai Dori, Tsuboya, Sakurazaka et la plage de Naminoue sont tous situés à 15–20 min de marche les uns des autres ou séparés par une seule station de monorail.
+* **Taxis** — abordables et nombreux pour les courts trajets (port de Tomari, marché de Makishi, retours tardifs) ; la plupart des courses en ville coûtent entre 700 et 1 200 ¥.
+* **Bus** — réseau étendu mais peu pratique pour les touristes (signalétique uniquement en japonais, appoint exact complexe) ; à éviter sauf si une ligne spécifique vous fait gagner un temps précieux.
 
-**Onna / Yomitan:** Skip the big resort strip for an afternoon and head into **Yomitan** — a genuinely quieter district with pottery villages (a lesser-known alternative to Tsuboya, worth a stop if you didn't get enough pottery culture in Naha), coastal walking paths, and Zakimi Castle ruins for a hilltop view without the crowds of Shuri.
+**Zamami + Aka :**
+
+* **À pied ou à vélo** — les deux îles sont suffisamment petites pour être entièrement parcourues sans véhicule à moteur. Les maisons d'hôtes louent généralement des vélos pour quelques centaines de yens par jour.
+* **Navette inter-îles (Zamami↔Aka)** — le seul "transport" dont vous aurez besoin, ~15 min, sans réservation.
+* **Taxis de village / camionnettes partagées** — il en existe quelques-uns sur Zamami pour les plus longs trajets (par exemple, vers les plages les plus éloignées), mais à cette échelle, il est peu probable que vous en ayez besoin.
 
 ---
 
-## 6. Tourist Traps / Overrated Stops
+## 3. Les meilleures plages — Baignade & Snorkeling
 
-- **American Village (Mihama, Chatan):** Fine for photos of the ferris wheel and a sunset, but it's a shopping-mall simulation of "American" culture with little that's specifically Okinawan. Skip unless it's directly on your route.
-- **Kokusai Dori souvenir shops** (the touristy stretch): Mass-produced, overpriced. Buy pottery/crafts in Tsuboya or Yomitan instead.
-- **Guided bus day-tours to the north:** Convenient but rushed — 30–45 minutes per stop on someone else's schedule. Since you already have a car for this leg, there's no reason to take one.
-- **Shuri Castle main hall — manage expectations, don't skip:** The Seiden (main hall) is still under active reconstruction, targeted for completion in November 2026, so you won't see a finished palace interior. The grounds, historic gates, viewpoint terraces, and the "watch the rebuild" viewing deck remain genuinely worthwhile — go for the story and the views over Naha, not a complete palace. Paid inner area ~¥400.
+| Plage | Étape / Accès | Pourquoi y aller | Notes |
+| --- | --- | --- | --- |
+| **Plage de Naminoue** (Naha) | À pied/monorail — 12–15 min depuis Kencho-mae ou Asahibashi | La seule plage baignable *dans* Naha — petite, propre, calme, sécurisée par un filet, avec un sanctuaire spectaculaire sur la falaise au-dessus. Gratuite. | Idéal pour une baignade rapide ou le coucher du soleil, pas pour du vrai snorkeling. N'attendez pas la beauté d'une plage de station balnéaire — c'est une plage urbaine avec un pont autoroutier juste devant, ce qui fait partie de son charme étrange. |
+| **Plage de Furuzamami** (Zamami) | 10–15 min à pied/vélo depuis le port de Zamami | Le meilleur spot de snorkeling facile de tout le voyage — les coraux peu profonds commencent à quelques mètres du sable, pas besoin de bateau. | C'est votre grande journée baignade — passez-y des heures, ne faites pas une visite précipitée. |
+| **Plage d'Ama** (Zamami) | ~10 min à pied depuis le port | Observation garantie de tortues marines directement depuis le bord à la bonne marée. | Demandez à votre hôte en maison d'hôtes quel est le meilleur créneau de marée pendant votre séjour. |
+| **Plage de Nishibama** (Aka) | Navette inter-îles depuis Zamami (~15 min) | Une superbe bande de sable d'un kilomètre avec un excellent snorkeling en eau peu profonde et une vue sur Geruma et Tokashiki — plus calme et plus locale que les plages de Zamami. | Apportez votre propre équipement de snorkeling ou louez sur place ; les infrastructures sont plus sommaires qu'à Furuzamami. |
+| **Cap Maeda / Grotte Bleue** (Onna) | Voiture — ~40–50 min depuis Onna | Topographie sous-marine impressionnante, bonne visibilité, traversée à la nage de la célèbre grotte. Cap rocheux, pas une plage de sable. | Très prisé par les clubs de plongée — y aller tôt (avant 9h) pour devancer les groupes de visiteurs. |
+| **Manza / autres plages de complexes à Onna** | Voiture, ou à pied si votre hôtel donne dessus | Larges plages de sable aménagées aux eaux turquoise classiques d'Okinawa, calmes et adaptées aux familles. | Pratiques plutôt qu'exceptionnelles — parfaites pour une heure de détente, pas une destination incontournable. |
+
+**En résumé :** Naminoue pour le côté pratique, Furuzamami/Ama pour la vraie expérience, le cap Maeda pour une seconde session de snorkeling sérieuse si vous voulez de la variété sur la côte ouest.
+
+---
+
+## 5. Quartiers & Pépites cachées
+
+**Naha :**
+
+* **Tsuboya (quartier des potiers) :** La rue pavée Yachimun-dori est plus calme et plus pittoresque que Kokusai Dori. Musée de la poterie de Tsuboya, 350 ¥, fermé le lundi, ~30 minutes.
+* **Sakurazaka :** En montée depuis Kokusai Dori — un petit cinéma d'art et d'essai entoure des magasins de disques, des bars à vinyles et des izakayas tranquilles que la plupart des guides oublient.
+* **Voie pavée de Kinjo (Shuri) :** Une courte ruelle en pierre de l'époque Ryukyu magnifiquement préservée près du château de Shuri — calme, ombragée, avec de vieilles maisons aux tuiles rouges.
+* **Jardin Fukushuen :** Jardin de style chinois gratuit près de Naminoue, souvent ignoré — 30 à 45 minutes de sérénité.
+* **Marché aux poissons de Tomari Iyumachi :** Marché d'un vrai port de pêche actif, moins touristique que Makishi, parfait pour déguster des sashimis ultra-frais.
+
+**Zamami :** Le village lui-même est la pépite cachée — une promenade courte et paisible au milieu des maisons traditionnelles avec un rythme vraiment doux une fois les ferrys à la journée partis. Renseignez-vous sur place pour louer un vélo à la journée ; l'île entière est assez petite pour en faire le tour tranquillement.
+
+**Aka :** Sensiblement plus calme et plus locale que Zamami, avec beaucoup moins de visiteurs. Au-delà de la plage de Nishibama, traversez le pont vers Geruma — ouvrez l'œil pour apercevoir les cerfs sauvages protégés des Kerama qui se promènent sur l'île. Il y a aussi une petite légende locale qui vaut le coup d'être demandée : la statue d'un chien sur le port, liée à une histoire d'amour bien connue à Okinawa entre deux chiens vivant sur des îles différentes.
+
+**Onna / Yomitan :** Laissez de côté la grande zone balnéaire le temps d'une après-midi et dirigez-vous vers **Yomitan** — un district nettement plus paisible avec des villages de potiers (une alternative moins connue à Tsuboya, qui vaut le détour si vous n'avez pas eu votre compte de poterie à Naha), des sentiers côtiers et les ruines du château de Zakimi pour une vue au sommet d'une colline sans la foule de Shuri.
+
+---
+
+## 6. Pièges à touristes / Étapes surévaluées
+
+* **American Village (Mihama, Chatan) :** Sympa pour des photos de la grande roue et un coucher de soleil, mais c'est une simulation de centre commercial de la culture "américaine" avec très peu d'éléments spécifiquement okinawaïens. À zapper sauf si c'est directement sur votre route.
+* **Boutiques de souvenirs de Kokusai Dori** (la partie très touristique) : Produits fabriqués en série, trop chers. Achetez plutôt vos poteries et artisanats à Tsuboya ou Yomitan.
+* **Excursions organisées en bus vers le nord :** Pratiques mais au pas de course — 30 à 45 minutes par arrêt selon l'emploi du temps d'un autre. Comme vous avez déjà une voiture pour cette étape, aucune raison d'en prendre une.
+* **Bâtiment principal du château de Shuri — gérez vos attentes, mais ne zappez pas :** Le Seiden (bâtiment principal) est toujours en cours de reconstruction active, avec une fin des travaux prévue pour novembre 2026, vous ne verrez donc pas l'intérieur d'un palais terminé. Les jardins, les portes historiques, les terrasses panoramiques et la plateforme d'observation du chantier valent vraiment le coup — allez-y pour l'histoire et la vue sur Naha, pas pour un palais complet. Zone intérieure payante ~400 ¥.
 
 ---
 
 ## 7. Restaurants, Cafés, Bars
 
-**Okinawan dishes to seek out:** goya champuru (bitter melon stir-fry), rafute (awamori-braised pork belly), Okinawa soba, umibudo ("sea grapes"), mimiga (pig ear salad), taco rice.
+**Spécialités d'Okinawa à goûter :** goya champuru (poêlée de melon amer), rafute (poitrine de porc mijotée à l'awamori), Okinawa soba, umibudo ("raisins de mer"), mimiga (salade d'oreilles de porc), taco rice.
 
-**Naha:**
-- Kokusai Dori food alleys / Makishi Market upstairs eateries — casual lunch, ¥1,000–2,000, surrounded by locals shopping.
-- Traditional Ryukyu-house izakaya near Kokusai Dori — full Okinawan menu with live sanshin/folk music most evenings, ~¥3,500–5,000/person; book ahead for a performance seating. Good choice for your final-night dinner (Day 8).
-- Small neighborhood izakaya in Sakurazaka or backstreets off Kokusai Dori — quieter than the main strip, ~¥3,000–4,500/person.
-- Awamori-focused restaurants near the prefectural office — worth one visit; staff can guide beginners through tastings.
+**Naha :**
 
-**Zamami:** Dining options are limited and concentrated near the port — most guesthouses serve dinner if you book ahead (often the easiest, best option, and a nice communal experience). A couple of casual burger/pizza spots near the port double as the evening social hub.
+* Ruelles gourmandes de Kokusai Dori / petits restos à l'étage du marché de Makishi — déjeuner décontracté, 1 000–2 000 ¥, au milieu des locaux qui font leurs courses.
+* Izakaya traditionnel dans une maison Ryukyu près de Kokusai Dori — menu complet d'Okinawa avec musique folk/sanshin en direct la plupart des soirs, ~3 500–5 000 ¥/personne ; réservez à l'avance pour avoir une table pendant le spectacle. Un très bon choix pour votre dernier dîner (Jour 8).
+* Petits izakayas de quartier à Sakurazaka ou dans les ruelles derrière Kokusai Dori — plus calmes que l'avenue principale, ~3 000–4 500 ¥/personne.
+* Restaurants spécialisés dans l'awamori près de la préfecture — méritent une visite ; le personnel peut guider les débutants à travers une dégustation.
 
-**Onna / Yomitan:** Several sunset-facing izakaya along the coast serve fresh seafood and Okinawan cuisine with glass-walled sea views — ask your accommodation for their current favorite, as turnover is higher here than in Naha's established scene. Yomitan has quieter, more local options away from the resort strip.
+**Zamami :** Les options de restauration sont limitées et concentrées près du port — la plupart des maisons d'hôtes servent le dîner si vous réservez à l'avance (c'est souvent l'option la plus simple, la meilleure et une expérience conviviale très sympa). Deux ou trois endroits décontractés servant burgers/pizzas près du port font aussi office de point de rencontre le soir.
 
-Budget rough guide: casual lunch ¥800–1,500; sit-down Okinawan dinner with drinks ¥3,000–5,000/person; izakaya evening with awamori tastings ¥4,000–6,000/person.
+**Onna / Yomitan :** Plusieurs izakayas face au coucher du soleil le long de la côte servent des fruits de mer frais et de la cuisine d'Okinawa avec vue sur la mer à travers de baies vitrées — demandez à votre hébergement leur endroit préféré du moment, car le roulement y est plus élevé que dans les enseignes établies de Naha. Yomitan propose des options plus calmes et plus locales, à l'écart de la zone balnéaire.
 
----
-
-## 8. Top 20 Experiences For Your Travel Style (Ranked)
-
-1. **A full day (or two) snorkeling at Furuzamami Beach, Zamami** — the best swimming/snorkeling of the trip, and now unrushed.
-2. **Sea turtles at Ama Beach, Zamami** — reliable, shore-accessible, no tour needed.
-3. **A quiet Zamami evening after the last day-trip ferry leaves** — the payoff for staying overnight instead of day-tripping.
-4. **Nishibama Beach and the walk to Geruma, Aka Island** — a quieter, more local counterpart to Zamami, easy to reach and worth the extra day.
-5. **Cape Manzamo at golden hour.**
-6. **Churaumi Aquarium's Kuroshio Sea tank.**
-7. **Slow morning walk through Tsuboya's Yachimun-dori pottery street.**
-8. **A full Okinawan dinner with live sanshin music** in a restored red-tile house (Naha, final night).
-9. **Cape Maeda's Blue Cave snorkel**, early before the crowds.
-10. **Sunset swim at Naminoue Beach**, shrine above, city behind.
-11. **Wandering Makishi Public Market** and eating lunch upstairs.
-12. **Shuri Castle Park grounds and gates**, including the reconstruction viewing deck.
-13. **Kinjo Stone Road** — quiet Ryukyu-era lane near Shuri.
-14. **An evening in Sakurazaka** — bar-hopping among record shops and art-house cinema culture.
-15. **Awamori tasting** at a distillery-affiliated izakaya.
-16. **Fukushuen Garden** — a free, calm half-hour escape.
-17. **Dinner at a Zamami guesthouse**, communal and simple.
-18. **A sunset-facing izakaya dinner on the Onna coast.**
-19. **A quick stop at Zakimi Castle ruins or a Yomitan pottery village** on the drive back to Naha — brief, but worth the detour if timing allows.
-20. **Yanbaru forest** — only if you decide to trim Churaumi shorter to fit it in; a genuine change of pace from beaches and city, but the first thing to cut given the tighter west-coast schedule.
+Repères de budget : déjeuner simple 800–1 500 ¥ ; dîner assis okinawaïen avec boissons 3 000–5 000 ¥/personne ; soirée izakaya avec dégustation d'awamori 4 000–6 000 ¥/personne.
 
 ---
 
-## 9. Rainy / Typhoon-Day Contingency Plan
+## 8. Le Top 20 des expériences pour votre style de voyage (Classé)
 
-Because the plan spans 3 bases, contingencies differ slightly by leg:
-
-- **In Naha:** Tsuboya Pottery Museum → pottery-painting workshop → Makishi Market long lunch → covered café afternoon → izakaya dinner with live music. Fully indoor, walkable/monorail-accessible.
-- **On Zamami/Aka:** Limited indoor options — this is the base most affected by bad weather. If a typhoon is forecast for your Zamami days, consider shifting the ferry a day earlier or later if your ticket allows; otherwise, a rainy day here is genuinely fine spent reading at the guesthouse and eating well — it's a small, peaceful place to be stuck. If the Aka boat specifically is cancelled, simply stay on Zamami that day instead — nothing is lost except the specific change of scenery.
-- **On the West Coast:** Ocean Expo Park's aquarium and Tropical Dream Center are indoor/covered options; Yomitan also has indoor pottery and glass-blowing workshops if the coastal walks get rained out. Having the car already with you makes pivoting to an indoor plan easy regardless of which day the weather turns.
+1. **Une journée entière (ou deux) de snorkeling à la plage de Furuzamami, Zamami** — les meilleures baignades et sessions de snorkeling du voyage, désormais sans se presser.
+2. **Les tortues marines à la plage d'Ama, Zamami** — faciles à voir, accessibles depuis le bord, pas besoin d'excursion.
+3. **Une soirée paisible à Zamami après le départ du dernier ferry de la journée** — la récompense pour avoir choisi de dormir sur place plutôt que de faire l'aller-retour dans la journée.
+4. **La plage de Nishibama et la marche vers Geruma, sur l'île d'Aka** — un pendant plus calme et plus local à Zamami, facile d'accès et qui vaut largement la journée supplémentaire.
+5. **Le cap Manzamo à l'heure dorée.**
+6. **Le grand bassin Kuroshio Sea de l'aquarium Churaumi.**
+7. **Balade matinale tranquille dans la rue des potiers Yachimun-dori à Tsuboya.**
+8. **Un dîner okinawaïen complet avec musique sanshin en direct** dans une maison restaurée aux tuiles rouges (Naha, dernière nuit).
+9. **Snorkeling dans la Grotte Bleue au cap Maeda**, tôt le matin avant la foule.
+10. **Baignade au coucher du soleil à la plage de Naminoue**, le sanctuaire au-dessus, la ville derrière.
+11. **Flâner au marché public de Makishi** et déjeuner à l'étage.
+12. **Les jardins et portes du parc du château de Shuri**, y compris la plateforme d'observation de la reconstruction.
+13. **La voie pavée de Kinjo** — une ruelle paisible de l'époque Ryukyu près de Shuri.
+14. **Une soirée à Sakurazaka** — tournée des bars entre magasins de disques et culture cinéma d'art et d'essai.
+15. **Dégustation d'awamori** dans un izakaya affilié à une distillerie.
+16. **Jardin Fukushuen** — une pause calme et gratuite de 30 minutes.
+17. **Dîner dans une maison d'hôtes à Zamami**, simple et convivial.
+18. **Un dîner en izakaya face au coucher du soleil sur la côte d'Onna.**
+19. **Une courte halte aux ruines du château de Zakimi ou dans un village de potiers à Yomitan** sur le trajet retour vers Naha — bref, mais vaut le détour si le timing le permet.
+20. **La forêt de Yanbaru** — uniquement si vous décidez de raccourcir la visite de Churaumi pour l'intégrer ; un vrai changement de décor par rapport aux plages et à la ville, mais la première chose à couper compte tenu du planning plus serré sur la côte ouest.
 
 ---
 
-**Final practical notes:**
-- Book the Zamami ferry and guesthouse together, and choose flexible-cancellation options given September's typhoon risk.
-- The Aka inter-island ferry doesn't need advance booking, so you can decide day-of based on weather and energy — no need to lock it in before you arrive.
-- Pick up the rental car in Naha on Day 6, right after the ferry back from Zamami — no need to arrange it before then.
-- Reserve your special live-music Okinawan dinner in Naha for Day 8, once you know your schedule held.
-- Carry cash, reef-safe sunscreen, and a light rain layer every day, even under a clear forecast.
-- Pack light for the Zamami leg — you'll want an easy walk from the ferry to your guesthouse.
+## 9. Plan de secours en cas de pluie / jour de typhon
+
+Comme le séjour comprend 3 étapes, les solutions de secours varient légèrement selon l'endroit :
+
+* **À Naha :** Musée de la poterie de Tsuboya → atelier de peinture sur poterie → long déjeuner au marché de Makishi → après-midi dans un café couvert → dîner en izakaya avec musique en direct. Entièrement en intérieur, accessible à pied ou en monorail.
+* **À Zamami/Aka :** Options intérieures limitées — c'est l'étape la plus exposée au mauvais temps. Si un typhon est annoncé pendant vos jours à Zamami, envisagez de décaler le ferry d'un jour plus tôt ou plus tard si votre billet le permet ; sinon, une journée de pluie ici se passe très bien à lire à la maison d'hôtes et à bien manger — c'est un endroit petit et paisible où être coincé. Si c'est le bateau pour Aka spécifiquement qui est annulé, restez simplement sur Zamami ce jour-là — vous ne perdez rien d'autre que le changement de décor.
+* **Sur la côte ouest :** L'aquarium du parc Ocean Expo et le Tropical Dream Center sont des options couvertes/en intérieur ; Yomitan propose également des ateliers intérieurs de poterie et de soufflage de verre si les balades côtières sont sous la pluie. Avoir déjà la voiture avec vous facilite le passage à un programme en intérieur, peu importe le jour où la météo tourne.
+
+---
+
+**Dernières notes pratiques :**
+
+* Réservez le ferry pour Zamami et la maison d'hôtes ensemble, et choisissez des options avec annulation flexible en raison du risque de typhon en septembre.
+* La navette inter-îles pour Aka n'a pas besoin d'être réservée à l'avance, vous pourrez donc décider le jour même en fonction de la météo et de votre énergie — pas besoin de la bloquer avant d'arriver.
+* Récupérez la voiture de location à Naha le Jour 6, juste après le ferry retour de Zamami — inutile de l'organiser avant.
+* Réservez votre dîner spécial okinawaïen avec musique en direct à Naha pour le Jour 8, une fois que vous saurez que votre programme s'est déroulé comme prévu.
+* Emportez des espèces, de la crème solaire respectueuse des récifs et un vêtement de pluie léger tous les jours, même si le ciel est dégagé.
+* Voyagez léger pour l'étape à Zamami — vous apprécierez d'avoir un trajet à pied facile entre le ferry et votre maison d'hôtes.
