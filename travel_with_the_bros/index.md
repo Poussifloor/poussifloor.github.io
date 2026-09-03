@@ -36,26 +36,27 @@ title: /travel_with_bros/Okinawa Trip
 | **2** | 30/08 | Naha → **Aka** | *Tôt :* Ferry depuis le port de Tomari vers Zamami + gueule de bois. Super bentō. | Plage de Nishihama — baignade / snorkeling + Coups de soleil. | Dîner paisible dans le food truck qui prend son temps. Mais C ok pck C les îles. Yossele se fait scam par son dîner. |
 | **3** | 31/08 | Aka | balade vélo bas de l'île | Temps libre : récif, flânerie dans le village  | Coucher de soleil depuis le port, dîner, bisous entre bros. Bar et deux bouteilles d'Awamori (grave erreur). Bain de minuit nus.|
 | **4** | 01/09 |~~ Aka → **Zamami** (excursion)~~ RETOUR NAHA (Typhon) | *Tôt :* Décuvage de la veille | Plage de Nishihama / snorkeling, tranquillou petit bentō  | Ferry retour vers Naha, aquarium + Location voiture (?) |
-| **5** | 02/09 | Aka | Sortie snorkeling en bateau vers les récifs extérieurs (à réserver la veille) | Temps libre / repos | Belvédère Kaijo Tenboudai au coucher du soleil, dîner |
-| **6** | 03/09 | ~~Aka → Naha → **Onna** ~~| ~~Marché public de Makishi / pause gourmande~~ | ~~Jardin Fukushuen, puis balade au marché aux poissons de Tomari Iyumachi. Trajet vers Onna (~1h), enregistrement, installation~~ | ~~Cap Manzamo à l'heure dorée (à 5 min de la base), dîner au coucher du soleil~~ |
-| **7** | 04/09 | Onna | *Tôt :* Cap Maeda — snorkeling à la Grotte Bleue (y aller tôt, avant les groupes) | Route vers le nord (~30–40 min) → Aquarium Churaumi | Dîner relaxant de retour à Onna |
-| **8** | 05/09 | Onna → **Naha** | Matinée en douceur | Trajet retour vers Naha (~1h), courte halte à Yomitan en chemin (villages de potiers / château de Zakimi) si le temps le permet, restitution définitive de la voiture | Dîner de fin de séjour — la belle table gardée pour l'occasion |
-| **9** | 06/09 | Naha | Matinée tranquille, bagages | Restitution de la voiture à l'aéroport, départ | — |
+| **5** | 02/09 | **Uruma** | Petit café de pain perdu | Direction les îles de la Kaichu road sur la côte est de l'archipel + Plages (payantes) toute l'aprèm | Izakaya de poisson après avoir galérer à trouver un endroit. On a enfin réussi à le manger. Dodo vers le Cap Zanpa|
+| **6** | 03/09 | **Onna**| Café italien et musée du Château de Zakimi. On observe l'arrivée du typhon par la pluie et les rafales de vents.  | ~~Jardin Fukushuen, puis balade au marché aux poissons de Tomari Iyumachi. Trajet vers Onna (~1h), enregistrement, installation~~ | ~~Cap Manzamo à l'heure dorée (à 5 min de la base), dîner au coucher du soleil~~ |
+| **7** | 04/09 | **Onna** | | Route vers le nord (~30–40 min) → Aquarium Churaumi |  |
+| **8** | 05/09 | Onna → **Naha** | Matinée en douceur | Trajet retour vers Naha (~1h) | Dîner de fin de séjour — la belle table gardée pour l'occasion |
+| **9** | 06/09 | **Naha** | Matinée tranquille, bagages | Départ vers 12h| — |
 
 **En un coup d'œil :** 3 nuits à Naha (ville, histoire, gastronomie — avec désormais du temps pour respirer) → 3 nuits à Zamami + une journée d'excursion à Aka (les plus belles baignades et spots de snorkeling du séjour, agrémentés d'une seconde île plus sauvage) → 2 nuits à Onna (Manzamo, la Grotte Bleue et Churaumi regroupés sur une journée dense mais complète) → 1 nuit à Naha (retour en douceur avant le vol).
 
 ---
 
-## 0.1 Hôtels
+## A Hôtels
 
 Les super hôtels qu'on veut réserver.
 
 | Jour | Date | Hôtel | Prix | Lien |
 | --- | --- | --- | --- | --- |
 | **0** | 28/08 - 30/08 | Naha | 6000 | [Relax Hotel (super cheap) ](https://www.agoda.com/fr-fr/9-10-4/hotel/okinawa-main-island-jp.html) |
-| **1** | 30/08 - 03/09 | Île d'Aka |  | [ Guest House AKIZATA ](https://www.booking.com/hotel/jp/guest-house-akizata-gesutohausu-akizata.fr.html?label=metatrivago-hotel-13389746_xqdz-def_los-3_nrm-1_gstadt-3_gstkid-0_curr-eur_lang-fr_mcid-50_ppt-B_dev-dsk_losb-3_bw-6_bwb-5_pg-0_dd-0_gsb-3_tstar-0_trat-0_tprc-0_tamnt-0_cod-1787638757_trvref-f1a7f1c0-c4f9-3c52-a6d7-1cd055723c1a&sid=7aa1e0c180530f8173b58f41720a2c88&utm_source=metatrivago&utm_medium=meta&utm_term=hotel-13389746&utm_content=los-3_nrm-1_gstadt-3_gstkid-0_curr-eur_lang-fr_mcid-50_ppt-B_dev-dsk_losb-3_bw-6_bwb-5_pg-0_dd-0_gsb-3_tstar-0_trat-0_tprc-0_tamnt-0_cod-1787638757_trvref-f1a7f1c0-c4f9-3c52-a6d7-1cd055723c1a&utm_campaign=fr&aid=340291&ucfs=1&checkin=2026-08-31&checkout=2026-09-03&dest_id=-249058&dest_type=city&group_adults=3&no_rooms=1&group_children=0&srpvid=fc7e2c73a9891157&srepoch=1787638806&all_sr_blocks=1338974605_441735256_3_0_0&highlighted_blocks=1338974605_441735256_3_0_0&matching_block_id=1338974605_441735256_3_0_0&atlas_src=sr_iw_title) |
-| **2** | 03/09 - 05/09 | Onna |  | [ Aucun ](https://www.google.com/search?q=) |
-| **3** | 05/09 - 06/09 | Naha |  | [ Aucun ](https://www.google.com/search?q=) |
+| **1** | 30/08 - 01/09 | Île d'Aka |  | [ Guest House AKIZATA ](https://www.booking.com/hotel/jp/guest-house-akizata-gesutohausu-akizata.fr.html?label=metatrivago-hotel-13389746_xqdz-def_los-3_nrm-1_gstadt-3_gstkid-0_curr-eur_lang-fr_mcid-50_ppt-B_dev-dsk_losb-3_bw-6_bwb-5_pg-0_dd-0_gsb-3_tstar-0_trat-0_tprc-0_tamnt-0_cod-1787638757_trvref-f1a7f1c0-c4f9-3c52-a6d7-1cd055723c1a&sid=7aa1e0c180530f8173b58f41720a2c88&utm_source=metatrivago&utm_medium=meta&utm_term=hotel-13389746&utm_content=los-3_nrm-1_gstadt-3_gstkid-0_curr-eur_lang-fr_mcid-50_ppt-B_dev-dsk_losb-3_bw-6_bwb-5_pg-0_dd-0_gsb-3_tstar-0_trat-0_tprc-0_tamnt-0_cod-1787638757_trvref-f1a7f1c0-c4f9-3c52-a6d7-1cd055723c1a&utm_campaign=fr&aid=340291&ucfs=1&checkin=2026-08-31&checkout=2026-09-03&dest_id=-249058&dest_type=city&group_adults=3&no_rooms=1&group_children=0&srpvid=fc7e2c73a9891157&srepoch=1787638806&all_sr_blocks=1338974605_441735256_3_0_0&highlighted_blocks=1338974605_441735256_3_0_0&matching_block_id=1338974605_441735256_3_0_0&atlas_src=sr_iw_title) |
+| **2** | 01/09 - 02/09 | xxxx |  | [ Family Resort ](https://www.google.com/search?q=) |
+| **3** | 02/09 - 03/09 | Cap Zanpa |  | [ Hôtel Zanpa ](https://www.google.com/search?q=) |
+| **4** | 05/09 - 06/09 | Onna |  | [ Hotel Miyuki Beach ](https://www.google.com/search?q=) |
 
 ## 1. Ce à quoi ressemble vraiment le mois de septembre à Okinawa
 
