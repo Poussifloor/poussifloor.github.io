@@ -22,7 +22,7 @@ title: /travel_with_koko/Hokkaido
 </style>
 
 ## Planning 
-## Hokkaido — 6 Jours, Nature & Calme (Boucle Shikotsu–Toya–Niseko)
+## Hokkaido — Itinéraire A : Boucle Shikotsu–Toya–Niseko
 
 | Jour | Date | Base | Hébergement | Matin | Après-midi | Soir |
 |---|---|---|---|---|---|---|
@@ -33,7 +33,16 @@ title: /travel_with_koko/Hokkaido
 | **5** | 13/10 | Niseko | Pension/hôtel de montagne | Route vers Niseko (~1h) | Niseko Panorama Line, balade ou rando courte selon l'énergie du jour | Dîner dans un village calme |
 | **6** | 14/10 | Niseko → Sapporo | — | Matinée tranquille à Niseko | Route retour vers l'aéroport (~2h), retour voiture | Vol 16h |
 
+## Hokkaido — Itinéraire B : Biei–Furano–Sounkyo
 
+| Jour | Date | Base | Matin | Après-midi | Soir |
+|---|---|---|---|---|---|
+| **1** | 09/10 | Biei | — | Arrivée Sapporo 13h, location voiture, route vers Biei (~2.5-3h) | Installation, dîner calme |
+| **2** | 10/10 | Biei | Panorama Road / Patchwork Road — collines en mosaïque, fermes isolées, cafés de campagne | Continuation à son rythme, arrêts photo libres | Dîner |
+| **3** | 11/10 | Furano | Route vers Furano (~30 min), Ningle Terrace (forêt), fermes/fromageries locales | Farniente ou balade selon l'envie | Dîner |
+| **4** | 12/10 | Sounkyo | Route vers Sounkyo via Asahikawa (~1.5h) | Installation, gorge et chutes Ginga/Ryusei à pied | Onsen, dîner |
+| **5** | 13/10 | Sounkyo / Daisetsuzan | Téléphérique Kurodake — vues alpines, rando courte si envie | Libre : Asahidake Onsen ou retour tranquille à Sounkyo | Onsen, dîner |
+| **6** | 14/10 | Sounkyo → Sapporo | Départ tôt — route retour (~3h) | Retour voiture, aéroport | Vol 16h |
 
 ## Liste à emporter — Hokkaido, début-mi octobre
 
