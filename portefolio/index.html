@@ -1,0 +1,1805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portfolio – Bollinger Interview</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fraunces:wght@500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#f6f4ef;
+  --card:#fff;
+  --fg:#1d1d1b;
+  --muted:#6b6a64;
+  --line:#dcd8cd;
+  --accent:#c4411f;
+  --coach:#fff4d6;
+  --coachfg:#5a4300;
+  --slot:#ece9e0;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px)
+}
+
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#161614;
+    --card:#1f1f1c;
+    --fg:#eeece5;
+    --muted:#a09e94;
+    --line:#34332e;
+    --accent:#ee7a57;
+    --coach:#33290f;
+    --coachfg:#f0d894;
+    --slot:#2a2a26;
+    color-scheme:dark
+  }
+}
+
+:root[data-theme="dark"]{
+  --bg:#161614;
+  --card:#1f1f1c;
+  --fg:#eeece5;
+  --muted:#a09e94;
+  --line:#34332e;
+  --accent:#ee7a57;
+  --coach:#33290f;
+  --coachfg:#f0d894;
+  --slot:#2a2a26;
+  color-scheme:dark
+}
+
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--fg);
+  font:10px/1.55 Inter,system-ui,-apple-system,Segoe UI,sans-serif
+}
+
+main{
+  max-width:980px;
+  margin:0 auto;
+  padding:24px 18px 120px
+}
+
+h1,h2,h3{
+  font-family:Fraunces,Georgia,serif;
+  font-weight:600;
+  line-height:1.15;
+  margin:0
+}
+
+h1{font-size:clamp(2rem,6vw,3.2rem)}
+h2{
+  font-size:1.6rem;
+  margin:48px 0 14px;
+  padding-top:14px;
+  border-top:2px solid var(--fg)
+}
+h3{font-size:1.25rem}
+
+a{color:inherit}
+.eyebrow{
+  font-size:.78rem;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--accent);
+  font-weight:600
+}
+.sub{
+  color:var(--muted);
+  margin:10px 0 0;
+  max-width:62ch
+}
+.ph{
+  background:var(--slot);
+  border-radius:4px;
+  padding:0 4px;
+  color:var(--muted)
+}
+
+.grid{display:grid;gap:14px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:10px;
+  padding:18px
+}
+
+.coach{
+  background:var(--coach);
+  color:var(--coachfg);
+  border-left:4px solid var(--accent);
+  border-radius:6px;
+  padding:12px 14px;
+  margin:14px 0;
+  font-size:.92rem
+}
+.coach b{
+  display:block;
+  font-size:.72rem;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  margin-bottom:4px
+}
+body.hide-coach .coach{display:none}
+
+.slots{
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:8px;
+  margin:14px 0
+}
+.slot{
+  background:#fff;
+  border:1.5px dashed var(--line);
+  border-radius:8px;
+  min-height:130px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:var(--muted);
+  font-size:.82rem;
+  padding:10px;
+  position:relative;
+  overflow:hidden
+}
+.slot.big{grid-row:span 2;min-height:268px}
+.slot img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center;
+  padding:10px;
+  background:#fff
+}
+.slot .cap{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  padding:4px 8px;
+  background:#000b;
+  color:#fff;
+  font:normal .7rem Inter,sans-serif;
+  text-align:left
+}
+
+.tag{
+  display:inline-block;
+  font-size:.72rem;
+  font-weight:600;
+  border:1px solid var(--accent);
+  color:var(--accent);
+  border-radius:99px;
+  padding:2px 10px;
+  margin-right:6px
+}
+
+dl{
+  margin:12px 0 0;
+  display:grid;
+  grid-template-columns:110px 1fr;
+  gap:8px 14px;
+  font-size:.93rem
+}
+dt{font-weight:600;color:var(--muted)}
+dd{margin:0}
+
+.arc{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px}
+.arc div{
+  flex:1 1 140px;
+  background:var(--card);
+  border:1px solid var(--line);
+  border-top:3px solid var(--accent);
+  border-radius:6px;
+  padding:10px;
+  font-size:.85rem
+}
+.arc b{
+  display:block;
+  font-size:.72rem;
+  color:var(--accent);
+  text-transform:uppercase;
+  letter-spacing:.08em
+}
+
+table{width:100%;border-collapse:collapse;font-size:.9rem}
+th,td{
+  text-align:left;
+  padding:8px 10px;
+  border-bottom:1px solid var(--line);
+  vertical-align:top
+}
+th{
+  font-size:.75rem;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  color:var(--muted)
+}
+.scroll{overflow-x:auto}
+ul{margin:8px 0 0;padding-left:20px}
+li{margin:4px 0}
+
+/* ---------------------------------------------------------
+   BARRE DE CONTRÔLE
+   --------------------------------------------------------- */
+.toolbar{
+  position:fixed;
+  z-index:50;
+  left:50%;
+  bottom:calc(14px + env(safe-area-inset-bottom,0px));
+  transform:translateX(-50%);
+  width:min(960px,calc(100% - 24px));
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  padding:10px;
+  border:1px solid var(--line);
+  background:color-mix(in srgb,var(--card) 94%,transparent);
+  backdrop-filter:blur(14px);
+  box-shadow:0 8px 24px #0002;
+  border-radius:14px
+}
+
+.vsw{
+  display:flex;
+  gap:6px;
+  flex-wrap:wrap;
+  margin:0
+}
+.vsw button,
+.toolbar button,
+.toolbar select{
+  border:1px solid var(--fg);
+  background:none;
+  color:var(--fg);
+  border-radius:99px;
+  padding:7px 14px;
+  font:500 .82rem Inter,sans-serif;
+  cursor:pointer
+}
+.vsw button.on{
+  background:var(--fg);
+  color:var(--bg)
+}
+.toolbar .tools{
+  display:flex;
+  gap:6px;
+  align-items:center;
+  flex-wrap:wrap;
+  justify-content:flex-end
+}
+.toolbar .primary{
+  background:var(--fg);
+  color:var(--bg)
+}
+
+/* ---------------------------------------------------------
+   COULEUR DES VARIANTES
+   --------------------------------------------------------- */
+#projects.v-arch{--ac:#8a6f4d}
+#projects.v-eng{--ac:#1f4e79}
+#projects.v-c2{--ac:#7a1f1f;--accent:var(--ac)}
+#projects.v-f{--accent:var(--muted)}
+#projects.v-p{--ac:#4f6676;--accent:var(--ac)}
+#projects.v-arch,#projects.v-eng{--accent:var(--ac)}
+
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) #projects.v-arch{--ac:#d3b48a}
+  :root:not([data-theme="light"]) #projects.v-eng{--ac:#7fb0e0}
+  :root:not([data-theme="light"]) #projects.v-c2{--ac:#e08a8a}
+  :root:not([data-theme="light"]) #projects.v-p{--ac:#93b5cf}
+}
+:root[data-theme="dark"] #projects.v-arch{--ac:#d3b48a}
+:root[data-theme="dark"] #projects.v-eng{--ac:#7fb0e0}
+:root[data-theme="dark"] #projects.v-c2{--ac:#e08a8a}
+:root[data-theme="dark"] #projects.v-p{--ac:#93b5cf}
+
+/* ---------------------------------------------------------
+   STYLE A — ARCHITECTE
+   --------------------------------------------------------- */
+.A{
+  padding:46px 0 36px;
+  border-top:1px solid var(--line)
+}
+.A .num{
+  font:500 4.2rem/1 Fraunces,Georgia,serif;
+  color:var(--ac);
+  opacity:.4
+}
+.A .meta{
+  font-size:.72rem;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--muted)
+}
+.A h3{
+  font:500 clamp(1.9rem,5vw,3rem)/1.1 Fraunces,Georgia,serif;
+  letter-spacing:-.01em;
+  margin:8px 0 6px
+}
+.A .slot{
+  border-radius:0;
+  border:1px solid var(--line);
+  font-family:Fraunces,Georgia,serif;
+  font-style:italic
+}
+.A .hero{
+  min-height:0;
+  aspect-ratio:16/8;
+  margin:28px 0 10px
+}
+.A .row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px
+}
+.A .row .slot{
+  min-height:0;
+  aspect-ratio:4/3
+}
+.A .cols{
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:44px;
+  margin-top:30px
+}
+.A .lab{
+  font-size:.7rem;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--ac);
+  margin:18px 0 4px
+}
+.A .lab:first-child{margin-top:0}
+.A p{
+  margin:0;
+  font:400 1.08rem/1.7 Fraunces,Georgia,serif
+}
+.A dl{grid-template-columns:1fr;gap:2px}
+.A dt{
+  margin-top:14px;
+  font-size:.68rem;
+  letter-spacing:.14em;
+  text-transform:uppercase
+}
+.A .coach{
+  background:none;
+  border:0;
+  border-top:1px solid var(--line);
+  border-radius:0;
+  color:var(--muted);
+  font-style:italic
+}
+
+/* ---------------------------------------------------------
+   STYLE E — INGÉNIEUR
+   --------------------------------------------------------- */
+.E{
+  display:grid;
+  grid-template-columns:1fr 220px;
+  border:1.5px solid var(--fg);
+  background:var(--card);
+  margin-bottom:22px
+}
+.E .main{
+  padding:22px;
+  border-right:1.5px solid var(--fg);
+  min-width:0
+}
+.E .id{
+  font:600 .72rem ui-monospace,Menlo,monospace;
+  letter-spacing:.12em;
+  color:var(--ac)
+}
+.E h3{
+  font:600 1.45rem Inter,sans-serif;
+  margin-top:4px
+}
+.E .kpis{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  border:1px solid var(--line);
+  margin:16px 0
+}
+.E .kpis div{
+  padding:10px 12px;
+  border-right:1px solid var(--line);
+  font-size:.7rem;
+  color:var(--muted);
+  text-transform:uppercase;
+  letter-spacing:.08em
+}
+.E .kpis div:last-child{border:0}
+.E .kpis b{
+  display:block;
+  font:600 1.05rem ui-monospace,Menlo,monospace;
+  color:var(--ac);
+  text-transform:none;
+  letter-spacing:0;
+  margin-top:2px
+}
+.E .figs{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:8px;
+  margin-bottom:18px
+}
+.E .slot{
+  min-height:110px;
+  border-radius:0;
+  border:1px solid var(--line);
+  font:.7rem ui-monospace,Menlo,monospace
+}
+.E .steps{list-style:none;margin:0;padding:0}
+.E .steps li{
+  display:grid;
+  grid-template-columns:32px 1fr;
+  gap:10px;
+  padding:10px 0;
+  border-top:1px solid var(--line);
+  font-size:.92rem;
+  margin:0
+}
+.E .steps i{
+  font:600 .8rem ui-monospace,monospace;
+  font-style:normal;
+  background:var(--ac);
+  color:var(--bg);
+  width:24px;
+  height:24px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center
+}
+.E .steps b{
+  display:block;
+  font-size:.7rem;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  color:var(--muted)
+}
+.E .cart div{
+  padding:12px 14px;
+  border-bottom:1px solid var(--line);
+  font-size:.82rem
+}
+.E .cart em{
+  display:block;
+  font:normal .64rem ui-monospace,monospace;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  color:var(--muted)
+}
+
+/* ---------------------------------------------------------
+   STYLE C2 — CLASSIQUE 2
+   --------------------------------------------------------- */
+.C2{
+  background:var(--card);
+  border:1px solid var(--line);
+  margin-bottom:26px;
+  padding:26px 28px
+}
+.C2 .hd{
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+  gap:12px;
+  flex-wrap:wrap;
+  border-bottom:2px solid var(--ac);
+  padding-bottom:10px;
+  margin-bottom:20px
+}
+.C2 .hd h3{font-size:1.5rem}
+.C2 .hd span.r{font-size:.78rem;color:var(--muted)}
+.C2 .bd{
+  display:grid;
+  grid-template-columns:260px 1fr;
+  gap:28px
+}
+.C2 .side .slot{min-height:105px;margin-bottom:8px}
+.C2 .info{
+  font-size:.82rem;
+  border-top:1px solid var(--line);
+  margin-top:12px
+}
+.C2 .info div{
+  padding:7px 0;
+  border-bottom:1px solid var(--line)
+}
+.C2 .info em{
+  display:block;
+  font-style:normal;
+  font-size:.66rem;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  color:var(--ac)
+}
+.C2 h4{
+  font:600 .95rem Inter,sans-serif;
+  color:var(--ac);
+  margin:16px 0 3px;
+  padding-bottom:2px;
+  border-bottom:1px solid var(--line)
+}
+.C2 h4:first-child{margin-top:0}
+.C2 p{margin:0;font-size:.95rem}
+
+/* ---------------------------------------------------------
+   STYLE F — FORMEL
+   --------------------------------------------------------- */
+.F{
+  border:1px solid var(--fg);
+  padding:34px 38px;
+  margin-bottom:30px;
+  background:var(--card);
+  font-family:Georgia,"Times New Roman",serif
+}
+.F .ref{
+  font-size:.72rem;
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  text-align:center;
+  color:var(--muted)
+}
+.F h3{
+  font:600 1.7rem Georgia,"Times New Roman",serif;
+  text-align:center;
+  margin:10px 0 4px
+}
+.F .m{
+  text-align:center;
+  font-style:italic;
+  color:var(--muted);
+  font-size:.92rem;
+  padding-bottom:16px;
+  border-bottom:3px double var(--fg);
+  margin-bottom:20px
+}
+.F table{margin:0 0 20px;font-size:.88rem}
+.F th{
+  width:130px;
+  font-size:.8rem;
+  letter-spacing:.04em;
+  text-transform:none;
+  font-weight:600;
+  color:var(--fg)
+}
+.F h4{
+  font:600 1rem Georgia,"Times New Roman",serif;
+  margin:18px 0 4px
+}
+.F p{
+  margin:0;
+  text-align:justify;
+  font-size:.96rem;
+  line-height:1.7
+}
+.F .figs{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+  margin:20px 0
+}
+.F .fig .slot{
+  min-height:120px;
+  border-radius:0;
+  border:1px solid var(--fg);
+  background:none
+}
+.F .fig small{
+  display:block;
+  text-align:center;
+  font-style:italic;
+  font-size:.75rem;
+  color:var(--muted);
+  margin-top:4px
+}
+.F .coach{
+  background:none;
+  border:1px solid var(--line);
+  border-radius:0;
+  color:var(--muted);
+  font-family:Inter,sans-serif
+}
+
+
+.project-divider{
+  width:min(210mm,100%);
+  min-height:297mm;
+  margin:0 auto 18px;
+  background:#fff;
+  display:flex;
+  align-items:center;
+  padding:20mm;
+  break-after:page;
+  page-break-after:always;
+}
+
+.project-divider-inner{
+  width:100%;
+  border-top:3px solid var(--accent);
+  padding-top:12mm;
+}
+
+.project-divider-kicker{
+  font-size:.72rem;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  color:var(--muted);
+  margin-bottom:8mm;
+}
+
+.project-divider h2{
+  margin:0;
+  padding:0;
+  border:0;
+  font:600 2.8rem/1.05 Fraunces,Georgia,serif;
+}
+
+.project-divider p{
+  max-width:450px;
+  margin-top:8mm;
+  font:400 1.05rem/1.6 Fraunces,Georgia,serif;
+  color:var(--muted);
+}
+
+/* ---------------------------------------------------------
+   PAGE DE GARDE — impression
+   --------------------------------------------------------- */
+.print-cover{
+  display:none
+}
+
+@media print{
+  .project-divider{
+    width:auto;
+    min-height:297mm;
+    margin:0;
+    box-shadow:none;
+  }
+  .print-cover{
+    width:210mm;
+    height:297mm;
+    padding:18mm 18mm 16mm;
+    background:#fff;
+    color:#1d1d1b;
+    grid-template-rows:auto 1fr auto;
+    break-after:page;
+    page-break-after:always;
+    overflow:hidden
+  }
+  body.print-projects-only .print-cover{
+    display:grid !important
+  }
+  .print-cover .cover-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    border-top:3px solid #1d1d1b;
+    padding-top:5mm;
+    font-size:8.5pt;
+    letter-spacing:.15em;
+    text-transform:uppercase
+  }
+  .print-cover .cover-main{
+    align-self:center;
+    max-width:155mm
+  }
+  .print-cover .cover-kicker{
+    font:600 9pt/1 Inter,system-ui,sans-serif;
+    letter-spacing:.2em;
+    text-transform:uppercase;
+    color:#8a6f4d;
+    margin-bottom:8mm
+  }
+  .print-cover h1{
+    font:600 34pt/1.02 Fraunces,Georgia,serif;
+    letter-spacing:-.02em;
+    margin:0 0 6mm
+  }
+  .print-cover .cover-role{
+    font:500 18pt/1.2 Fraunces,Georgia,serif;
+    margin:0 0 10mm
+  }
+  .print-cover .cover-school{
+    max-width:125mm;
+    font:400 11pt/1.55 Inter,system-ui,sans-serif;
+    color:#56544f
+  }
+  .print-cover .cover-bottom{
+    display:grid;
+    grid-template-columns:1fr auto;
+    gap:12mm;
+    align-items:end;
+    border-bottom:3px solid #1d1d1b;
+    padding-bottom:5mm;
+    font-size:8.5pt;
+    line-height:1.55;
+    color:#56544f
+  }
+  .print-cover .cover-bottom a{
+    color:inherit !important;
+    text-decoration:none !important
+  }
+  .print-cover .cover-year{
+    text-align:right;
+    font:500 16pt/1 Fraunces,Georgia,serif;
+    color:#8a6f4d
+  }
+}
+
+/* ---------------------------------------------------------
+   STYLE P — PLANCHE A4 / ENTRETIEN — DOUBLE PAGE
+   --------------------------------------------------------- */
+.P{
+  margin-bottom:34px
+}
+.P .page{
+  width:min(210mm,100%);
+  height:297mm;
+  margin:0 auto 18px;
+  background:#fff;
+  color:#1d1d1b;
+  border:1px solid var(--line);
+  box-shadow:0 8px 28px #0001;
+  padding:10mm 12mm;
+  display:grid;
+  grid-template-rows:22mm 1fr 5mm;
+  gap:5mm;
+  overflow:hidden
+}
+.P .head{
+  height:22mm;
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:8mm;
+  align-items:start;
+  border-bottom:2px solid var(--ac);
+  padding-bottom:3.5mm;
+  overflow:hidden
+}
+.P .head .num{
+  font:500 2.35rem/1 Fraunces,Georgia,serif;
+  color:var(--ac);
+  opacity:.42
+}
+.P .head .ey{
+  font-size:.66rem;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--ac);
+  font-weight:600
+}
+.P .head h3{
+  font:600 1.55rem/1.05 Fraunces,Georgia,serif;
+  margin-top:2px
+}
+.P .head .meta{
+  color:#6b6a64;
+  font-size:.78rem;
+  line-height:1.3;
+  margin-top:4px
+}
+
+/* Page 1 : image principale + introduction compacte */
+.P .page1body{
+  min-height:0;
+  display:grid;
+  grid-template-rows:112mm 1fr;
+  gap:6mm
+}
+.P .hero{
+  width:100%;
+  height:112mm;
+  min-height:0;
+  border:1px solid #cfcfcf;
+  border-radius:0;
+  background:#fff
+}
+.P .introgrid{
+  min-height:0;
+  display:grid;
+  grid-template-columns:3fr 2fr;
+  gap:8mm;
+  align-items:start
+}
+.P .introtext{
+  display:flex;
+  flex-direction:column;
+  gap:5mm;
+  align-content:start
+}
+.P .introtext .block{
+  border-top:0;
+  padding-top:0
+}
+.P .facts{
+  border-left:1px solid #d7d7d7;
+  padding-left:7mm;
+  display:flex;
+  flex-direction:column;
+  align-items:stretch;
+  gap:4.5mm
+}
+.P .fact{
+  padding:0
+}
+.P .fact em{
+  display:block;
+  font-style:normal;
+  font-size:.62rem;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:#777;
+  margin-bottom:1.5mm
+}
+.P .fact strong{
+  display:block;
+  font-size:.84rem;
+  line-height:1.42;
+  font-weight:500
+}
+.P .statuspill{
+  align-self:flex-start;
+  display:inline-block;
+  border:1px solid var(--ac);
+  border-radius:999px;
+  padding:1.5mm 3mm;
+  font-size:.61rem;
+  line-height:1.2;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--ac)
+}
+.P .kpis{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:2mm;
+  margin-top:1mm
+}
+.P .kpis div{
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:3mm;
+  align-items:baseline;
+  min-width:0;
+  padding:2.2mm 2.8mm;
+  background:#f5f4f0
+}
+.P .kpis span{
+  display:block;
+  font-size:.58rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:#777
+}
+.P .kpis b{
+  display:block;
+  font:600 .72rem Inter,sans-serif;
+  color:var(--ac);
+  text-align:right;
+  overflow-wrap:anywhere
+}
+
+/* Page 2 : deux images en colonne à gauche, texte restant à droite */
+.P .page2body{
+  min-height:0;
+  display:grid;
+  grid-template-columns:44% 1fr;
+  gap:9mm
+}
+.P .imagecol{
+  min-height:0;
+  display:grid;
+  grid-template-rows:1fr 1fr;
+  gap:5mm
+}
+.P .imagecol .slot{
+  width:100%;
+  min-height:0;
+  height:100%;
+  border:1px solid #cfcfcf;
+  border-radius:0;
+  background:#fff
+}
+.P .textcol{
+  min-height:0;
+  border-left:1px solid #d7d7d7;
+  padding-left:7mm;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  gap:5mm
+}
+.P .block{
+  border-top:1px solid #d7d7d7;
+  padding-top:3.5mm
+}
+.P .block:first-child{
+  border-top:0;
+  padding-top:0
+}
+.P .lab{
+  font-size:.64rem;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--ac);
+  margin:0 0 2mm;
+  font-weight:700
+}
+.P .block p{
+  margin:0;
+  font-size:.9rem;
+  line-height:1.5
+}
+.P .textcol .block p{
+  font-size:.94rem;
+  line-height:1.58
+}
+.P .pageid{
+  align-self:end;
+  justify-self:end;
+  font-size:.62rem;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:#777
+}
+
+/* Les figures du style A4 sont toujours contenues entièrement. */
+.P .slot{
+  background:#fff
+}
+.P .slot img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center;
+  padding:4mm;
+  background:#fff
+}
+.P .slot .cap{
+  background:rgba(255,255,255,.94);
+  color:#333;
+  border-top:1px solid #ddd;
+  padding:2mm 3mm;
+  font-size:.66rem
+}
+.P .coach{display:none}
+
+.role-list{
+  margin:5px 0 0;
+  padding-left:17px;
+  font-size:.88rem;
+  line-height:1.4;
+}
+
+.role-list li{
+  margin:0 0 4px;
+}
+
+.role-text{
+  margin:5px 0 0;
+  font-size:.88rem;
+  line-height:1.45;
+}
+
+/* ---------------------------------------------------------
+   RESPONSIVE
+   --------------------------------------------------------- */
+@media(max-width:800px){
+  .toolbar{
+    align-items:stretch;
+    flex-direction:column
+  }
+  .toolbar .tools{justify-content:flex-start}
+}
+@media(max-width:700px){
+  .C2 .bd{grid-template-columns:1fr}
+  .C2{padding:20px 16px}
+  .F{padding:22px 16px}
+  .F .figs{grid-template-columns:1fr}
+  .A .cols{grid-template-columns:1fr;gap:10px}
+  .A .num{font-size:3rem}
+  .E{grid-template-columns:1fr}
+  .E .main{
+    border-right:0;
+    border-bottom:1.5px solid var(--fg)
+  }
+  .E .kpis,.E .figs{grid-template-columns:1fr}
+  .E .kpis div{
+    border-right:0;
+    border-bottom:1px solid var(--line)
+  }
+  .P .page{width:100%;height:auto;min-height:0;padding:18px;grid-template-rows:auto auto auto}
+  .P .head{height:auto;grid-template-columns:1fr}
+  .P .page1body{grid-template-rows:auto auto}
+  .P .hero{height:auto;aspect-ratio:16/9}
+  .P .introgrid,.P .page2body{grid-template-columns:1fr}
+  .P .introtext{grid-template-columns:1fr}
+  .P .facts,.P .textcol{border-left:0;padding-left:0}
+  .P .imagecol{grid-template-rows:auto auto}
+  .P .imagecol .slot{height:auto;aspect-ratio:4/3}
+  .P .kpis{grid-template-columns:1fr}
+  .P .kpis div{border-right:0;border-bottom:1px solid #d7d7d7}
+}
+@media(max-width:600px){
+  .slots{grid-template-columns:1fr}
+  .slot.big{min-height:180px;grid-row:auto}
+  dl{grid-template-columns:1fr}
+  dt{margin-top:6px}
+}
+
+
+
+.process-list,
+.role-list{
+  margin:5px 0 0;
+  padding-left:18px;
+  font-size:.9rem;
+  line-height:1.45;
+}
+
+.process-list li,
+.role-list li{
+  margin:0 0 5px;
+}
+
+.process-text,
+.role-text{
+  margin:5px 0 0;
+  font-size:.9rem;
+  line-height:1.5;
+}
+
+/* ---------------------------------------------------------
+   IMPRESSION / PDF
+   Le format exact de page est injecté en JS avant window.print().
+   --------------------------------------------------------- */
+@media print{
+  :root{
+    --bg:#fff;
+    --card:#fff;
+    --fg:#111;
+    --muted:#555;
+    --line:#c9c9c9;
+    --slot:#f3f3f3;
+    --accent:#8a3a24;
+    color-scheme:light
+  }
+
+  html,body{
+    background:#fff !important;
+    color:#111 !important;
+    print-color-adjust:exact;
+    -webkit-print-color-adjust:exact
+  }
+
+  body{font-size:10.5pt}
+  main{
+    max-width:none;
+    margin:0;
+    padding:0
+  }
+
+  .toolbar,
+  #tg{display:none !important}
+
+  body.print-projects-only main > :not(#projects){
+    display:none !important
+  }
+
+  body.print-projects-only #projects{
+    display:block !important
+  }
+
+  body.print-projects-only .print-projects-title{
+    display:none !important
+  }
+
+  body.print-no-coach .coach{
+    display:none !important
+  }
+
+  #projects article{
+    break-inside:avoid;
+    page-break-inside:avoid
+  }
+
+  body.print-one-project-per-page #projects article{
+    break-after:page;
+    page-break-after:always;
+    min-height:0
+  }
+
+  body.print-one-project-per-page #projects article:last-child{
+    break-after:auto;
+    page-break-after:auto
+  }
+
+  .A,
+  .E,
+  .C2,
+  .F,
+  .P .page,
+  .card{
+    box-shadow:none !important
+  }
+
+  .A{
+    padding:0;
+    border-top:0
+  }
+  .A .hero{margin-top:8mm}
+  .A .cols{gap:10mm;margin-top:7mm}
+  .A .coach{display:none !important}
+
+  .E{margin-bottom:0}
+  .C2{margin-bottom:0}
+  .F{margin-bottom:0}
+
+  .P{
+    break-inside:auto;
+    page-break-inside:auto;
+    break-after:auto;
+    page-break-after:auto;
+    margin:0
+  }
+  .P .page{
+    width:210mm;
+    height:297mm;
+    min-height:297mm;
+    margin:0;
+    padding:10mm 12mm;
+    border:0;
+    box-shadow:none !important;
+    break-after:page;
+    page-break-after:always
+  }
+  #projects article.P:last-child .page:last-child{
+    break-after:auto;
+    page-break-after:auto
+  }
+  body.print-one-project-per-page #projects article.P{
+    break-after:auto;
+    page-break-after:auto
+  }
+  .P .coach{display:none !important}
+
+  a{
+    color:inherit !important;
+    text-decoration:none
+  }
+
+  .ph{
+    background:transparent !important;
+    color:inherit !important;
+    padding:0 !important
+  }
+}
+
+
+</style>
+</head>
+
+<body>
+<section class="print-cover" aria-hidden="true">
+  <div class="cover-top">
+    <span>Project portfolio</span>
+    <span>Engineering · Structures · Architecture</span>
+  </div>
+
+  <div class="cover-main">
+    <div class="cover-kicker">Selected projects</div>
+    <h1>Ulysse COLLÉ</h1>
+    <p class="cover-role">Structural Engineer</p>
+    <div class="cover-school">
+      École nationale des ponts et chaussées × Sorbonne Université<br>
+      Master 2 AMMS · Structures, Materials and Architecture
+    </div>
+  </div>
+
+  <div class="cover-bottom">
+    <div>
+      <a href="mailto:ulysse.colle@enpc.fr">ulysse.colle@enpc.fr</a><br>
+      <a href="tel:+33785619562">+33 7 85 61 95 62</a><br>
+      <a href="https://www.linkedin.com/in/ulysse-coll%C3%A9-53108671">linkedin.com/in/ulysse-collé-53108671</a>
+    </div>
+    <div class="cover-year">2026</div>
+  </div>
+</section>
+<main>
+
+<header>
+  <div class="eyebrow">Portfolio · Draft v6 · Bollinger Interview</div>
+  <h1>Ulysse COLLÉ<br>Structural Engineer</h1>
+  <p class="sub">
+    École nationale des ponts et chaussées × Sorbonne Université · Master 2 AMMS · Structures, Materials and Architecture.<br>
+    <a href="mailto:ulysse.colle@enpc.fr">ulysse.colle@enpc.fr</a> ·
+    <a href="tel:+33785619562">+33 7 85 61 95 62</a> ·
+    <a href="https://www.linkedin.com/in/ulysse-coll%C3%A9-53108671">Ulysse COLLÉ</a>
+  </p>
+
+
+</header>
+
+
+<h2 class="print-projects-title">Projects</h2>
+<div id="projects"></div>
+
+
+</main>
+
+<div class="toolbar" aria-label="Contrôles du portfolio">
+  <div class="vsw" id="vsw">
+    <button data-v="c">Classic 1</button>
+    <button data-v="c2">Classic 2</button>
+    <button data-v="f">Formal</button>
+    <button data-v="a">Architect · elegant</button>
+    <button data-v="e">Engineer · rigorous</button>
+    <button data-v="p">A4 sheet · interview</button>
+  </div>
+
+  <div class="tools">
+    <button id="tg" type="button">Hide coaching</button>
+
+    <select id="printScope" aria-label="Content to print">
+      <option value="projects" selected>Projects only</option>
+      <option value="all">Full portfolio</option>
+    </select>
+
+    <select id="printOrientation" aria-label="A4 orientation">
+      <option value="portrait" selected>A4 portrait</option>
+      <option value="landscape">A4 landscape</option>
+    </select>
+
+    <select id="printPagination" aria-label="Pagination">
+      <option value="one" selected>1 project / page</option>
+      <option value="flow">Continuous flow</option>
+    </select>
+
+    <button id="printBtn" class="primary" type="button">PDF / Print</button>
+  </div>
+</div>
+
+<script src="portfolio_bollinger_v6_EN.js"></script>
+
+<script>
+/* =========================================================
+   DONNÉES
+   L'ordre du tableau P reste la source de vérité :
+   - ordre d'affichage
+   - numéro de planche
+   - association des figures
+   ========================================================= */
+var pj = document.getElementById("project");
+
+
+/* =========================================================
+   HELPERS
+   ========================================================= */
+
+var pj = document.getElementById("projects");
+
+function esc(s){
+  return String(s == null ? "" : s)
+    .replace(/&/g,"&amp;")
+    .replace(/</g,"&lt;")
+    .replace(/>/g,"&gt;")
+    .replace(/"/g,"&quot;");
+}
+
+function coachBox(p){
+  return '<div class="coach"><b>What to focus on</b>'+esc(p.c)+'</div>';
+}
+
+function projectMeta(p){
+  return [
+    ["My role", p.role], 
+    ["Outils", p.tools],
+    ["Statut", p.status]
+  ];
+}
+
+function figuresHTML(labels){
+  return labels.map(function(label){
+    return '<div class="slot">'+esc(label)+'</div>';
+  }).join("");
+}
+
+function figs(){
+  pj.querySelectorAll("article").forEach(function(article,i){
+    var f = (P[i] && P[i].f) || [];
+    var formalMode = article.classList.contains("F");
+
+    article.querySelectorAll(".slot").forEach(function(slot,n){
+      var g = f[n];
+      if(g && g.s){
+        slot.innerHTML =
+          '<img src="'+String(g.s).replace(/"/g,"%22")+'" alt="'+esc(g.c || "")+'">' +
+          (g.c && !formalMode ? '<span class="cap">'+esc(g.c)+'</span>' : '');
+      }
+    });
+
+    article.querySelectorAll(".fig small").forEach(function(caption,n){
+      var g = f[n];
+      if(g && g.c){
+        caption.textContent = "Figure "+(n+1)+" : "+g.c;
+      }
+    });
+  });
+}
+
+function roman(n){
+  var map=[
+    [1000,"M"],[900,"CM"],[500,"D"],[400,"CD"],
+    [100,"C"],[90,"XC"],[50,"L"],[40,"XL"],
+    [10,"X"],[9,"IX"],[5,"V"],[4,"IV"],[1,"I"]
+  ];
+  var out="";
+  map.forEach(function(pair){
+    while(n>=pair[0]){
+      out+=pair[1];
+      n-=pair[0];
+    }
+  });
+  return out;
+}
+
+function mainProjectsCover(){
+  return `
+    <section class="project-divider project-divider-main">
+      <div class="project-divider-inner">
+        <div class="project-divider-kicker">Portfolio · Ulysse COLLÉ</div>
+        <h2>Main projects</h2>
+        <p>
+          A selection of representative projects reflecting my approach,
+          at the intersection of design, structure, and architecture.
+        </p>
+      </div>
+    </section>
+  `;
+}
+
+function complementaryCover(){
+  return `
+    <section class="project-divider">
+      <div class="project-divider-inner">
+        <div class="project-divider-kicker">Portfolio · Ulysse COLLÉ</div>
+        <h2>Additional projects</h2>
+        <p>
+          Studies, explorations and realizations coming to complete
+          the main selection.
+        </p>
+      </div>
+    </section>
+  `;
+}
+
+
+
+function listOrTextHTML(text, className){
+  var items=String(text || "")
+    .split(";")
+    .map(function(x){return x.trim()})
+    .filter(Boolean);
+
+  if(items.length<=1){
+    return '<p class="'+className+'-text">'+esc(text || "")+'</p>';
+  }
+
+  return '<ul class="'+className+'-list">'+
+    items.map(function(x){
+      return '<li>'+esc(x)+'</li>';
+    }).join("")+
+  '</ul>';
+}
+
+
+/* =========================================================
+   RENDERS
+   ========================================================= */
+
+function classic(){
+  var h="";
+  P.forEach(function(p){
+    h+='<article class="card" style="margin-bottom:18px">' +
+      '<span class="tag">'+esc(p.tag)+'</span>' +
+      '<div class="eyebrow" style="margin-top:8px">'+esc(p.t)+'</div>' +
+      '<h3 style="margin-top:6px">'+esc(p.name)+'</h3>' +
+      '<p class="sub">'+esc(p.meta)+'</p>' +
+      '<div class="slots">' +
+        '<div class="slot big">Main image</div>' +
+        '<div class="slot">Diagram / model</div>' +
+        '<div class="slot">Detail / result</div>' +
+      '</div>' +
+      '<dl>';
+
+    projectMeta(p).forEach(function(x){
+      h+='<dt>'+esc(x[0])+'</dt><dd>'+listOrTextHTML(x[1], "process")+'</dd>';
+    });
+
+    p.sections.forEach(function(x){
+      h+='<dt>'+esc(x[0])+'</dt><dd>'+listOrTextHTML(x[1], "process")+'</dd>';
+    });
+
+    h+='</dl>'+'</article>';
+  });
+  return h;
+}
+
+function arch(){
+  var h="";
+
+  P.forEach(function(p,i){
+    var primary = p.sections.filter(function(x){
+      return ["Contexte","Enjeu","Démarche","Méthode","Question","Résultats","Résultat"].indexOf(x[0]) !== -1;
+    });
+
+    var secondary = p.sections.filter(function(x){
+      return primary.indexOf(x) === -1;
+    });
+
+    h+='<article class="A">' +
+      '<div class="num">'+String(i+1).padStart(2,"0")+'</div>' +
+      '<div class="meta">'+esc(p.tag)+'</div>' +
+      '<h3>'+esc(p.name)+'</h3>' +
+      '<div class="meta">'+esc(p.meta)+'</div>' +
+      '<div class="slot hero">Fig. 1 — Main image</div>' +
+      '<div class="row">' +
+        '<div class="slot">Fig. 2 — Diagram / model</div>' +
+        '<div class="slot">Fig. 3 — Detail / result</div>' +
+      '</div>' +
+      '<div class="cols"><div>';
+
+    primary.forEach(function(x){
+      h+='<div class="lab">'+esc(x[0])+'</div><p>'+listOrTextHTML(x[1], "process")+'</p>';
+    });
+
+    h+='</div><dl>';
+
+    projectMeta(p).forEach(function(x){
+      h+='<dt>'+esc(x[0])+'</dt><dd>'+listOrTextHTML(x[1], "process")+'</dd>';
+    });
+
+    p.kpi.forEach(function(x){
+      h+='<dt>'+esc(x[0])+'</dt><dd>'+listOrTextHTML(x[1], "process")+'</dd>';
+    });
+
+    secondary.forEach(function(x){
+      h+='<dt>'+esc(x[0])+'</dt><dd>'+listOrTextHTML(x[1], "process")+'</dd>';
+    });
+
+    h+='</dl></div>'+'</article>';
+  });
+
+  return h;
+}
+
+function eng(){
+  var h="";
+
+  P.forEach(function(p,i){
+    h+='<article class="E">' +
+      '<div class="main">' +
+        '<div class="id">'+esc(p.tag.toUpperCase())+' · PLANCHE '+String(i+1).padStart(2,"0")+'</div>' +
+        '<h3>'+esc(p.name)+'</h3>' +
+        '<p class="sub">'+esc(p.meta)+'</p>' +
+
+        '<div class="kpis">' +
+          p.kpi.map(function(k){
+            return '<div>'+esc(k[0])+'<b>'+esc(k[1])+'</b></div>';
+          }).join("") +
+        '</div>' +
+
+        '<div class="figs">' +
+          '<div class="slot">FIG. 1 — Main image</div>' +
+          '<div class="slot">FIG. 2 — Diagram / model</div>' +
+          '<div class="slot">FIG. 3 — Résultat / détail</div>' +
+        '</div>' +
+
+        '<ol class="steps">' +
+          p.sections.map(function(x,j){
+            return '<li><i>'+(j+1)+'</i><div><b>'+esc(x[0])+'</b>'+listOrTextHTML(x[1], "process")+'</div></li>';
+          }).join("") +
+        '</ol>' +
+
+        
+      '</div>' +
+
+      '<div class="cart">' +
+        '<div><em>Discipline</em>'+esc(p.tag)+'</div>' +
+        '<div><em>Rôle</em>'+listOrTextHTML(p.role, "role")+'</div>' +
+        '<div><em>Outils</em>'+esc(p.tools)+'</div>' +
+        '<div><em>Statut</em>'+esc(p.status)+'</div>' +
+        '<div><em>Planche</em>'+String(i+1).padStart(2,"0")+' / '+P.length+'</div>' +
+      '</div>' +
+    '</article>';
+  });
+
+  return h;
+}
+
+function cl2(){
+  var h="";
+
+  P.forEach(function(p,i){
+    h+='<article class="C2">' +
+      '<div class="hd">' +
+        '<h3>'+esc(p.name)+'</h3>' +
+        '<span class="r">Projet '+String(i+1).padStart(2,"0")+' / '+P.length+' · '+esc(p.tag)+'</span>' +
+      '</div>' +
+      '<div class="bd">' +
+        '<div class="side">' +
+          '<div class="slot">Main image</div>' +
+          '<div class="slot">Diagram / model</div>' +
+          '<div class="slot">Detail / result</div>' +
+          '<div class="info">' +
+            '<div><em>Période et cadre</em>'+esc(p.meta)+'</div>' +
+            '<div><em>My role</em>'+listOrTextHTML(p.role, "role")+'</div>' +
+            '<div><em>Outils</em>'+esc(p.tools)+'</div>' +
+            '<div><em>Statut</em>'+esc(p.status)+'</div>' +
+          '</div>' +
+        '</div>' +
+        '<div>';
+
+    p.sections.forEach(function(x){
+      h+='<h4>'+esc(x[0])+'</h4><p>'+listOrTextHTML(x[1], "process")+'</p>';
+    });
+
+    h+='</div></div></article>';
+  });
+
+  return h;
+}
+
+function formal(){
+  var h="";
+
+  P.forEach(function(p,i){
+    h+='<article class="F">' +
+      '<div class="ref">Dossier de projet n° '+(i+1)+' · '+esc(p.tag)+'</div>' +
+      '<h3>'+esc(p.name)+'</h3>' +
+      '<div class="m">'+esc(p.meta)+'</div>' +
+
+      '<table>' +
+        '<tr><th scope="row">Rôle</th><td>'+listOrTextHTML(p.role, "role")+'</td></tr>' +
+        '<tr><th scope="row">Outils</th><td>'+esc(p.tools)+'</td></tr>' +
+        '<tr><th scope="row">Statut</th><td>'+esc(p.status)+'</td></tr>' +
+      '</table>' +
+
+      '<div class="figs">' +
+        '<div class="fig"><div class="slot">Main image</div><small>Figure 1 : [légende]</small></div>' +
+        '<div class="fig"><div class="slot">Diagram / model</div><small>Figure 2 : [légende]</small></div>' +
+        '<div class="fig"><div class="slot">Detail / result</div><small>Figure 3 : [légende]</small></div>' +
+      '</div>';
+
+    p.sections.forEach(function(x,j){
+      h+='<h4>'+roman(j+1)+'. '+esc(x[0])+'</h4><p>'+listOrTextHTML(x[1], "process")+'</p>';
+    });
+
+    h+='</article>';
+  });
+
+  return h;
+}
+
+/* =========================================================
+   VUES
+   ========================================================= */
+
+function filterSections(p,names){
+  return p.sections.filter(function(x){
+    return names.indexOf(x[0])!==-1;
+  });
+}
+
+function remainingSections(p,names){
+  return p.sections.filter(function(x){
+    return names.indexOf(x[0])===-1;
+  });
+}
+
+
+function renderBlocks(list){
+  return list.map(function(x){
+    var content;
+
+    if(x[0]==="Démarche" || x[0]==="Méthode"){
+      content=listOrTextHTML(x[1],"process");
+    }else{
+      content='<p>'+esc(x[1])+'</p>';
+    }
+
+    return '<div class="block">' +
+      '<div class="lab">'+esc(x[0])+'</div>' +
+      content +
+    '</div>';
+  }).join('');
+}
+
+
+function splitCols(list){
+  var mid=Math.ceil(list.length/2);
+  return [list.slice(0,mid),list.slice(mid)];
+}
+
+function sheet(){
+  var h='';
+  var complementaryStarted=false;
+  var hasMain=P.some(function(p){
+    return p.group!=="complementary";
+  });
+
+  if(hasMain){
+    h+=mainProjectsCover();
+  }
+
+  P.forEach(function(p,i){
+
+    if(p.group==="complementary" && !complementaryStarted){
+      h+=complementaryCover();
+      complementaryStarted=true;
+    }
+
+
+    var introKeys=['Contexte','Question','Enjeu'];
+    var page1Sections=filterSections(p,introKeys);
+    var page2Sections=remainingSections(p,introKeys);
+
+    /* Si un projet n'utilise aucun des intitulés standard,
+       on place ses deux premières sections sous l'image principale. */
+    if(!page1Sections.length){
+      page1Sections=page2Sections.slice(0,2);
+      page2Sections=page2Sections.slice(2);
+    }
+
+    h+='<article class="P">' +
+      '<section class="page page1">' +
+        '<div class="head">' +
+          '<div><div class="ey">'+esc(p.tag)+' · Projet '+String(i+1).padStart(2,'0')+'</div><h3>'+esc(p.name)+'</h3><div class="meta">'+esc(p.meta)+'</div></div>' +
+          '<div class="num">'+String(i+1).padStart(2,'0')+'</div>' +
+        '</div>' +
+
+        '<div class="page1body">' +
+          '<div class="slot hero">Figure 1 — Main image</div>' +
+          '<div class="introgrid">' +
+            '<div class="introtext">'+renderBlocks(page1Sections)+'</div>' +
+            '<div class="facts">' +
+              '<div class="fact"><em>My role</em><strong>'+listOrTextHTML(p.role, "role")+'</strong></div>' +
+              '<div class="fact"><em>Outils</em><strong>'+esc(p.tools)+'</strong></div>' +
+              '<div class="statuspill">'+esc(p.status)+'</div>' +
+              '<div class="kpis">'+p.kpi.map(function(k){return '<div><span>'+esc(k[0])+'</span><b>'+esc(k[1])+'</b></div>';}).join('')+'</div>' +
+            '</div>' +
+          '</div>' +
+        '</div>' +
+
+        '<div class="pageid">Page 1 / 2</div>' +
+      '</section>' +
+
+      '<section class="page page2">' +
+        '<div class="head">' +
+          '<div><div class="ey">'+esc(p.tag)+' · Development</div><h3>'+esc(p.name)+'</h3><div class="meta">Method, results and critical feedback</div></div>' +
+          '<div class="num">'+String(i+1).padStart(2,'0')+'</div>' +
+        '</div>' +
+
+        '<div class="page2body">' +
+          '<div class="imagecol">' +
+            '<div class="slot">Figure 2 — Diagram / model</div>' +
+            '<div class="slot">Figure 3 — Detail / result</div>' +
+          '</div>' +
+          '<div class="textcol">'+renderBlocks(page2Sections)+'</div>' +
+        '</div>' +
+
+        '<div class="pageid">Page 2 / 2</div>' +
+      '</section>' +
+    '</article>';
+  });
+
+  return h;
+}
+
+var V={
+  c:classic,
+  c2:cl2,
+  f:formal,
+  a:arch,
+  e:eng,
+  p:sheet
+};
+
+var C={
+  c:"",
+  c2:"v-c2",
+  f:"v-f",
+  a:"v-arch",
+  e:"v-eng",
+  p:"v-p"
+};
+
+var currentView="p";
+
+function show(v){
+  currentView=v;
+  pj.className=C[v];
+  pj.innerHTML=V[v]();
+  figs();
+
+  document.querySelectorAll("#vsw button").forEach(function(btn){
+    btn.className=btn.dataset.v===v ? "on" : "";
+  });
+}
+
+document.getElementById("vsw").onclick=function(e){
+  if(e.target.dataset.v){
+    show(e.target.dataset.v);
+  }
+};
+
+show(currentView);
+
+/* =========================================================
+   COACHING
+   ========================================================= */
+
+var coachBtn=document.getElementById("tg");
+
+coachBtn.onclick=function(){
+  var hidden=document.body.classList.toggle("hide-coach");
+  coachBtn.textContent=hidden ? "Show coaching" : "Hide coaching";
+};
+
+/* =========================================================
+   IMPRESSION / PDF
+   Utilise le style actuellement sélectionné.
+   ========================================================= */
+
+var printBtn=document.getElementById("printBtn");
+var printScope=document.getElementById("printScope");
+var printOrientation=document.getElementById("printOrientation");
+var printPagination=document.getElementById("printPagination");
+
+function configurePrint(){
+  document.body.classList.toggle("print-projects-only",printScope.value==="projects");
+  document.body.classList.toggle("print-one-project-per-page",printPagination.value==="one");
+  document.body.classList.add("print-no-coach");
+
+  var old=document.getElementById("dynamicPageStyle");
+  if(old) old.remove();
+
+  var style=document.createElement("style");
+  style.id="dynamicPageStyle";
+  if(currentView==="p"){
+    style.textContent="@page{size:A4 portrait;margin:0}";
+  }else{
+    style.textContent="@page{size:A4 "+printOrientation.value+";margin:10mm}";
+  }
+  document.head.appendChild(style);
+}
+
+function cleanupPrint(){
+  document.body.classList.remove("print-projects-only","print-one-project-per-page","print-no-coach");
+}
+
+printBtn.onclick=function(){
+  configurePrint();
+  window.print();
+};
+
+window.addEventListener("afterprint",cleanupPrint);
+</script>
+
+</body>
+</html>
